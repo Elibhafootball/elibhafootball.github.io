@@ -1,0 +1,595 @@
+body{margin:0 auto;max-width:1180px;padding:28px 24px 60px;background:#f3f0e6;color:#202a27;font-family:Georgia,'Times New Roman',serif}h1{font-size:38px}h2{border-bottom:2px solid #173d32;padding-bottom:6px;margin-top:34px}h3{margin:18px 0 6px}table{width:100%;border-collapse:collapse;background:#fffdf7;margin:12px 0 22px;font-size:14px}th{background:#e7ece8}th,td{border-bottom:1px solid #ddd;padding:7px 8px;text-align:right}th:first-child,td:first-child{text-align:left}.score{text-align:center;font-weight:bold}.results td:first-child{width:44%;text-align:right}.results td:nth-child(3){width:44%;text-align:left}.round{background:#fffdf7;border:1px solid #d8d3c7;padding:12px 16px;margin:16px 0;border-radius:7px}
+.zone-auto{border-bottom:3px solid #2876a7!important}.zone-playoff{border-bottom:3px solid #b48621!important}.zone-relegation td:first-child{border-top:3px solid #a83832!important}
+.round-block{background:#fffdf7;border:1px solid #d8d3c7;border-radius:7px;padding:12px 16px;margin:16px 0}.match-date{font-weight:bold;color:#3a4b45;margin:12px 0 4px}
+
+.results .meta{width:220px;text-align:left;color:#68716d;font-size:12px}.results .meta span{display:block}
+.results td:nth-child(2){text-align:right}.results td:nth-child(4){text-align:left}.date{font-weight:bold;color:#3a4b45}.stage{font-style:italic}
+
+body{margin:0;background:#f3f0e8;color:#18211e}.sitebar{background:#172922;color:#fff;padding:14px 24px;display:flex;gap:22px;align-items:center}
+.sitebar a{color:#fff;text-decoration:none}.sitebar .brand{font-weight:800;letter-spacing:.4px;margin-right:auto}
+main{max-width:1120px;margin:30px auto;padding:0 24px 50px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:18px 0}
+.card{background:#fffdf7;border:1px solid #d7d1c3;border-radius:8px;padding:16px}.card h3{margin-top:0}
+a{color:#185d52}.lede{font-size:18px;color:#45534d;max-width:780px}.small{font-size:13px;color:#66716d}
+.grid-two{display:grid;grid-template-columns:1fr 1fr;gap:22px}@media(max-width:800px){.grid-two{grid-template-columns:1fr}}
+
+.league-graph{width:100%;height:auto;background:#fffdf7;border:1px solid #d7d1c3;border-radius:8px}
+.graph-legend{display:flex;gap:18px;flex-wrap:wrap;margin:8px 0 22px;font-size:12px}.legend-item i{display:inline-block;width:14px;height:10px;margin-right:5px;border:1px solid #bbb}
+.club-history{width:100%;border-collapse:collapse;background:#fffdf7;font-size:13px}.club-history th,.club-history td{padding:7px 8px;border-bottom:1px solid #ded9ce;text-align:center}.club-history th:nth-child(2),.club-history td:nth-child(2),.club-history th:nth-child(3),.club-history td:nth-child(3){text-align:left}
+.club-history tr.champion{background:#fff0a8}.club-history tr.promoted{background:#e1f0df}.club-history tr.relegated{background:#f2dddd}
+.honour{display:inline-block;min-width:28px;padding:2px 5px;border-radius:3px}.honour-win{background:#f4d75c;color:#171717;font-weight:700}.honour-final{background:#d9e2e8;color:#24343b;font-weight:700}
+
+/* v1.6 table and graph tidy-up */
+.table-wrap{width:100%;overflow-x:auto}
+.league-table.tidy{width:100%;table-layout:fixed;border-collapse:collapse}
+.league-table.tidy th,.league-table.tidy td{padding:7px 9px;text-align:right;white-space:nowrap}
+.league-table.tidy th.pos,.league-table.tidy td.pos{width:38px;text-align:left;padding-left:7px;padding-right:5px}
+.league-table.tidy th.club,.league-table.tidy td.club{width:auto;text-align:left;padding-left:5px;padding-right:14px}
+.league-table.tidy th:not(.pos):not(.club),.league-table.tidy td:not(.pos):not(.club){width:52px}
+.league-table.tidy td.pts{font-weight:700}
+.league-table.tidy tbody tr.zone-auto:last-child td{border-bottom:3px solid #2e6fa3}
+.league-table.tidy tbody tr.zone-playoff:last-child td{border-bottom:3px solid #b27b27}
+.league-table.tidy tbody tr.zone-relegated:first-child td{border-top:3px solid #9b4b43}
+.season-leagues{display:grid;grid-template-columns:1fr;gap:28px}.league-block h3{margin-bottom:8px}.section-note{margin-top:-8px;color:#5d6863}
+.club-history{table-layout:auto}.club-history th,.club-history td{padding:7px 10px}.club-history th:nth-child(1){width:78px}.club-history th:nth-child(2){width:145px}.club-history th:nth-child(4){width:55px}
+.league-graph{display:block;width:100%;height:auto;background:#fffdf7;border:1px solid #d8d2c5;border-radius:6px}
+.graph-legend{display:flex;gap:18px;flex-wrap:wrap;margin:8px 0 24px;font-size:12px;color:#56615c}.graph-legend span{display:inline-flex;align-items:center;gap:5px}.graph-legend i{width:15px;height:10px;border:1px solid #bbb;display:inline-block}.graph-legend .tier1{background:#dce9e3}.graph-legend .tier2{background:#e9e3d4}.graph-legend .tier3{background:#e2e7f0}.graph-legend .tier4{background:#eee2e2}
+
+/* v1.7 promotion/play-off/relegation boundaries */
+.league-table.tidy tr.boundary-auto td{border-bottom:3px solid #2e6fa3}
+.league-table.tidy tr.boundary-playoff td{border-bottom:3px solid #b27b27}
+.league-table.tidy tr.boundary-relegation td{border-top:3px solid #9b4b43}
+.honours-count,.manager-history{width:100%;max-width:650px;border-collapse:collapse;background:#fffdf7;margin:10px 0 24px}
+.honours-count th,.honours-count td,.manager-history th,.manager-history td{padding:7px 10px;border-bottom:1px solid #ddd;text-align:left}
+.honours-count th:nth-child(n+2),.honours-count td:nth-child(n+2){text-align:right;width:95px}
+
+/* v1.8 All Clubs fidelity */
+.club-history.dynamic{table-layout:auto}
+.club-history.dynamic th,.club-history.dynamic td{padding:7px 9px}
+.club-history.dynamic td.manager{width:150px;text-align:left;vertical-align:middle;font-weight:600;background:#faf8f1}
+.club-history.dynamic td.season{width:78px;text-align:left}
+.club-history.dynamic td.division{min-width:175px;text-align:left}
+.club-history.dynamic td.position{width:58px;text-align:center}
+.club-history.dynamic th:nth-child(n+5),.club-history.dynamic td:nth-child(n+5){text-align:center;min-width:62px}
+.league-graph.google-style{width:100%;height:auto;background:#fff;border:1px solid #ddd;border-radius:4px}
+
+/* v1.9: major-title index and desktop fixture layout */
+.club-index-table{width:100%;border-collapse:collapse;background:#fffdf7;margin:10px 0 28px}
+.club-index-table th,.club-index-table td{padding:7px 10px;border-bottom:1px solid #d9d7d0}
+.club-index-table th:first-child,.club-index-table td:first-child{text-align:left}
+.club-index-table .num,.club-index-table th:nth-child(2){width:115px;text-align:center}
+.club-index-table .season-link,.club-index-table th:nth-child(3){width:125px;text-align:right}
+
+.fixture-table{width:min(900px,100%);margin:12px auto 28px;border-collapse:collapse;background:#fffdf7;table-layout:fixed}
+.fixture-table th{background:#e7ece8;font-size:13px;padding:7px 10px;border-bottom:1px solid #cfd4d0}
+.fixture-table td{padding:8px 10px;border-bottom:1px solid #dedbd3;vertical-align:middle}
+.fixture-table .fixture-meta,.fixture-table td.meta{width:190px;text-align:left}
+.fixture-table .fixture-home,.fixture-table td:nth-child(2){width:280px;text-align:right;padding-right:16px}
+.fixture-table .fixture-score,.fixture-table td.score{width:72px;text-align:center;font-weight:700}
+.fixture-table .fixture-away,.fixture-table td:nth-child(4){width:280px;text-align:left;padding-left:16px}
+.fixture-table td.meta{font-size:12px;color:#64706b;line-height:1.25}
+.fixture-table td.meta .date{display:block;font-weight:700;color:#33443e}
+.fixture-table td.meta .stage{display:block;font-style:normal;color:#6d7773;margin-top:2px}
+.fixture-table td:nth-child(2),.fixture-table td:nth-child(4){white-space:normal;line-height:1.15}
+@media(max-width:760px){
+  .fixture-table{table-layout:auto;font-size:13px}
+  .fixture-table .fixture-meta,.fixture-table td.meta{width:125px}
+  .fixture-table .fixture-home,.fixture-table td:nth-child(2),
+  .fixture-table .fixture-away,.fixture-table td:nth-child(4){width:auto;padding-left:8px;padding-right:8px}
+  .fixture-table .fixture-score,.fixture-table td.score{width:52px}
+}
+
+/* v2.1 trophy highlighting: cell-level only, matching All Clubs */
+.club-history tr.champion,.club-history tr.promoted,.club-history tr.relegated{background:transparent!important}
+.trophy-win{display:inline-block;background:#fff176;color:#111;font-weight:700;padding:2px 6px;min-width:28px;text-align:center}
+.honour.win{background:#fff176!important;color:#111!important;font-weight:700}
+
+/* v2.2 promotion/relegation highlighting, cell-level like All Clubs */
+.promotion-mark{display:inline-block;background:#d9ead3;color:#111;padding:2px 6px;min-width:34px;text-align:center}
+.relegation-mark{display:inline-block;background:#f4cccc;color:#111;padding:2px 6px;min-width:34px;text-align:center}
+
+/* v2.3: highlight division + position together for title/promotion/relegation */
+.title-league{display:inline-block;background:#fff176;color:#111;font-weight:700;padding:2px 6px}
+.promotion-league{display:inline-block;background:#d9ead3;color:#111;padding:2px 6px}
+.relegation-league{display:inline-block;background:#f4cccc;color:#111;padding:2px 6px}
+
+/* v2.7 universal archive header */
+.sitebar{width:100%;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:24px;background:#132b22;color:#fff;padding:12px 22px;border-top:2px solid #e8e1cc;position:relative;z-index:100}
+.sitebar .brand{margin-right:auto;font-weight:700;letter-spacing:.2px}
+.sitebar-links{display:flex;align-items:center;gap:26px}
+.sitebar a{color:#fff;text-decoration:none;white-space:nowrap}
+.sitebar a:hover{text-decoration:underline}
+@media(max-width:650px){.sitebar{padding:10px 12px;gap:12px;flex-wrap:wrap}.sitebar-links{gap:16px}}
+
+/* v2.8 major honours seasons */
+.major-honours-table{max-width:900px}
+.major-honours-table th:nth-child(2),.major-honours-table td:nth-child(2){width:80px;text-align:center}
+.major-honours-table th:nth-child(3),.major-honours-table td:nth-child(3){text-align:left}
+.major-honours-table .honour-seasons{line-height:1.45}
+
+/* v2.9 major-honours layout: compact horizontal season lists */
+.major-honours-table{
+  width:100%;
+  max-width:none;
+  table-layout:auto;
+}
+.major-honours-table th:first-child,
+.major-honours-table td:first-child{
+  width:28%;
+  white-space:nowrap;
+}
+.major-honours-table th:nth-child(2),
+.major-honours-table td:nth-child(2){
+  width:70px;
+  min-width:70px;
+  text-align:center;
+}
+.major-honours-table th:nth-child(3),
+.major-honours-table td:nth-child(3){
+  width:auto;
+  text-align:left;
+}
+.major-honours-table .honour-seasons{
+  white-space:normal;
+  line-height:1.55;
+  word-break:normal;
+  overflow-wrap:normal;
+}
+
+/* v3.0 symmetrical, centred match-result layout */
+table.results{
+  width:min(760px,100%);
+  margin-left:auto;
+  margin-right:auto;
+  table-layout:fixed;
+}
+table.results td:first-child{
+  width:calc((100% - 72px)/2);
+  text-align:right;
+  padding-right:14px;
+  padding-left:6px;
+}
+table.results td.score{
+  width:72px;
+  min-width:72px;
+  text-align:center;
+  padding-left:0;
+  padding-right:0;
+  white-space:nowrap;
+  font-weight:700;
+}
+table.results td:last-child{
+  width:calc((100% - 72px)/2);
+  text-align:left;
+  padding-left:14px;
+  padding-right:6px;
+}
+
+/* v3.1 Wikipedia-style result colouring on individual club-season pages */
+.fixture-table tbody tr.club-result.win > td{background:#c6efce}
+.fixture-table tbody tr.club-result.draw > td{background:#fff2cc}
+.fixture-table tbody tr.club-result.loss > td{background:#f4cccc}
+.fixture-table tbody tr.club-result > td{border-bottom-color:#b9b9b9}
+
+/* v3.2 domestic knockout brackets */
+.knockout-scroll{width:100%;overflow-x:auto;overflow-y:hidden;padding:4px 0 18px}
+.knockout-bracket{min-width:max-content;background:#fffdf7;border:1px solid #d7d4cc;padding:8px}
+.knockout-svg{display:block;background:#fffdf7}
+.knockout-svg .round-title{font-family:Georgia,'Times New Roman',serif;font-size:15px;font-weight:700;fill:#202820}
+.knockout-svg .bracket-line{fill:none;stroke:#555;stroke-width:1.2}
+.knockout-svg .tie-box{fill:#f7f7f7;stroke:#999;stroke-width:1}
+.knockout-svg .tie-divider{stroke:#aaa;stroke-width:1}
+.knockout-svg .team,.knockout-svg .score{font-family:Arial,sans-serif;font-size:11.5px;fill:#234fba}
+.knockout-svg .team.winner,.knockout-svg .score.winner{font-weight:700;fill:#111}
+.knockout-svg .tie-note{font-family:Arial,sans-serif;font-size:9.5px;fill:#555}
+
+/* v3.3 FA Cup replays: original and replay scores as adjacent columns in the same tie box */
+.knockout-svg .replay-score{fill:#555}
+.knockout-svg .replay-score.winner{fill:#111;font-weight:700}
+
+/* =========================================================
+   v3.6 — Wikipedia-inspired visual pass
+   CSS-only: preserve all archive structure and data logic.
+   ========================================================= */
+:root{
+  --wiki-text:#202122; --wiki-muted:#54595d; --wiki-link:#3366cc; --wiki-visited:#795cb2;
+  --wiki-border:#a2a9b1; --wiki-border-light:#c8ccd1; --wiki-head-bg:#eaecf0;
+  --wiki-subtle:#f8f9fa; --elibha-green:#132b22; --elibha-rule:#284b3f;
+  --win:#c6efce; --draw:#fff2cc; --loss:#f4cccc;
+  --title:#fff176; --promotion:#d9ead3; --relegation:#f4cccc;
+}
+html{background:#fff}
+body{
+  margin:0;background:#fff;color:var(--wiki-text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,Helvetica,sans-serif;
+  font-size:15px;line-height:1.5;
+}
+main{max-width:1280px;margin:24px auto 48px;padding:0 22px}
+
+/* Permanent Elibha header */
+.sitebar{
+  width:100%;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;
+  gap:24px;background:var(--elibha-green);color:#fff;padding:11px 22px;
+  min-height:48px;border:0;border-bottom:1px solid #315146;border-radius:0;box-shadow:none;
+}
+.sitebar .brand{
+  margin-right:auto;font-family:Georgia,"Times New Roman",serif;font-size:18px;
+  font-weight:700;letter-spacing:.1px;
+}
+.sitebar-links{display:flex;align-items:center;gap:24px;font-size:14px}
+.sitebar a{color:#fff;text-decoration:none;white-space:nowrap}
+.sitebar a:hover{text-decoration:underline;text-underline-offset:2px}
+
+/* Article hierarchy */
+h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif;color:#202122;font-weight:400}
+h1{
+  font-size:30px;line-height:1.2;margin:0 0 18px;padding-bottom:6px;
+  border-bottom:1px solid var(--elibha-rule);
+}
+h2{
+  font-size:23px;line-height:1.25;margin:28px 0 12px;padding-bottom:4px;
+  border-bottom:1px solid var(--elibha-rule);
+}
+h3{font-size:18px;margin:20px 0 8px}
+.lede{font-size:16px;line-height:1.55;color:var(--wiki-text);max-width:900px}
+.small,.section-note{color:var(--wiki-muted);font-size:13px}
+
+/* Wikipedia-style links */
+main a{color:var(--wiki-link);text-decoration:none}
+main a:visited{color:var(--wiki-visited)}
+main a:hover{text-decoration:underline;text-underline-offset:2px}
+
+/* Lose the modern "card" look */
+.cards{gap:12px;margin:12px 0 20px}
+.card{background:#fff;border:1px solid var(--wiki-border-light);border-radius:0;padding:12px 14px;box-shadow:none}
+.card h2,.card h3{border-bottom:0;margin-top:0}
+
+/* General tables */
+table{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,Helvetica,sans-serif}
+.table-wrap{width:100%;overflow-x:auto;margin:0 0 18px}
+.league-table,.club-index-table,.club-history,.honours-count,.manager-history,.fixture-table{
+  border-collapse:collapse;background:#fff;border:1px solid var(--wiki-border);
+}
+.league-table th,.club-index-table th,.club-history th,.honours-count th,.manager-history th,.fixture-table th{
+  background:var(--wiki-head-bg);color:var(--wiki-text);font-weight:700;border:1px solid var(--wiki-border);
+}
+.league-table td,.club-index-table td,.club-history td,.honours-count td,.manager-history td,.fixture-table td{
+  border:1px solid var(--wiki-border-light);
+}
+.league-table th,.league-table td,.club-index-table th,.club-index-table td,
+.club-history th,.club-history td,.honours-count th,.honours-count td,
+.manager-history th,.manager-history td{padding:5px 8px}
+.league-table tbody tr:hover,.club-index-table tbody tr:hover,.club-history tbody tr:hover,.honours-count tbody tr:hover{
+  background:#f8f9fa;
+}
+
+/* League tables: tight and symmetrical */
+.league-table.tidy{width:100%;table-layout:fixed}
+.league-table.tidy th,.league-table.tidy td{
+  padding:5px 7px;font-size:14px;text-align:right;white-space:nowrap;
+}
+.league-table.tidy th.pos,.league-table.tidy td.pos{
+  width:38px;text-align:center;padding-left:4px;padding-right:4px;
+}
+.league-table.tidy th.club,.league-table.tidy td.club{
+  width:auto;text-align:left;padding-left:8px;padding-right:10px;
+}
+.league-table.tidy th:not(.pos):not(.club),.league-table.tidy td:not(.pos):not(.club){width:52px}
+.league-table.tidy td.pts{font-weight:700}
+.league-table.tidy tr.boundary-auto td{border-bottom:3px solid #3366cc}
+.league-table.tidy tr.boundary-playoff td{border-bottom:3px solid #b8860b}
+.league-table.tidy tr.boundary-relegation td{border-top:3px solid #a33}
+
+/* Club history */
+.club-history.dynamic{width:100%;table-layout:auto;font-size:14px}
+.club-history.dynamic td.manager{
+  width:150px;text-align:left;vertical-align:middle;font-weight:600;background:#fff;
+}
+.club-history.dynamic td.season{width:80px;text-align:left}
+.club-history.dynamic td.division{min-width:165px;text-align:left}
+.club-history.dynamic td.position{width:56px;text-align:center}
+.club-history.dynamic th:nth-child(n+5),.club-history.dynamic td:nth-child(n+5){min-width:58px;text-align:center}
+
+/* Preserve exact cell-level achievement colours */
+.trophy-win,.title-league{background:var(--title);color:#111;font-weight:700}
+.promotion-mark,.promotion-league{background:var(--promotion);color:#111}
+.relegation-mark,.relegation-league{background:var(--relegation);color:#111}
+.trophy-win,.title-league,.promotion-mark,.promotion-league,.relegation-mark,.relegation-league{
+  display:inline-block;padding:1px 5px;min-width:28px;text-align:center;border-radius:0;
+}
+
+/* Major honours */
+.major-honours-table{width:100%;max-width:none}
+.major-honours-table th:first-child,.major-honours-table td:first-child{width:27%;white-space:nowrap}
+.major-honours-table th:nth-child(2),.major-honours-table td:nth-child(2){
+  width:64px;min-width:64px;text-align:center;
+}
+.major-honours-table th:nth-child(3),.major-honours-table td:nth-child(3){width:auto;text-align:left}
+.major-honours-table .honour-seasons{line-height:1.45;white-space:normal}
+
+/* Individual club-season fixtures — keep score exactly centred */
+.fixture-table{width:min(920px,100%);margin:10px auto 24px;table-layout:fixed}
+.fixture-table th,.fixture-table td{padding:6px 9px;font-size:14px}
+.fixture-table .fixture-meta,.fixture-table td.meta{width:185px;text-align:left}
+.fixture-table .fixture-home,.fixture-table td:nth-child(2){
+  width:calc((100% - 185px - 70px)/2);text-align:right;padding-right:12px;
+}
+.fixture-table .fixture-score,.fixture-table td.score{
+  width:70px;min-width:70px;text-align:center;padding-left:0;padding-right:0;font-weight:700;
+}
+.fixture-table .fixture-away,.fixture-table td:nth-child(4){
+  width:calc((100% - 185px - 70px)/2);text-align:left;padding-left:12px;
+}
+.fixture-table tbody tr.club-result.win > td{background:var(--win)}
+.fixture-table tbody tr.club-result.draw > td{background:var(--draw)}
+.fixture-table tbody tr.club-result.loss > td{background:var(--loss)}
+
+/* Competition match lists — equal team columns around a fixed score */
+table.results{width:min(760px,100%);margin:8px auto 18px;table-layout:fixed;border-collapse:collapse}
+table.results td{border-bottom:1px solid var(--wiki-border-light);padding-top:5px;padding-bottom:5px}
+table.results td:first-child{
+  width:calc((100% - 68px)/2);text-align:right;padding-right:12px;padding-left:4px;
+}
+table.results td.score{
+  width:68px;min-width:68px;text-align:center;padding:0;font-weight:700;white-space:nowrap;
+}
+table.results td:last-child{
+  width:calc((100% - 68px)/2);text-align:left;padding-left:12px;padding-right:4px;
+}
+
+/* Knockout brackets */
+.knockout-scroll{margin:8px 0 20px}
+.knockout-bracket{background:#fff;border:1px solid var(--wiki-border);padding:8px}
+.knockout-svg{background:#fff}
+.knockout-svg .round-title{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,Helvetica,sans-serif;
+  font-size:13px;font-weight:700;fill:var(--wiki-text);
+}
+.knockout-svg .tie-box{fill:#f8f9fa;stroke:var(--wiki-border)}
+.knockout-svg .tie-divider{stroke:var(--wiki-border)}
+.knockout-svg .bracket-line{stroke:#72777d;stroke-width:1}
+.knockout-svg .team,.knockout-svg .score{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,Helvetica,sans-serif;
+  font-size:11.5px;fill:var(--wiki-link);
+}
+.knockout-svg .team.winner,.knockout-svg .score.winner{fill:var(--wiki-text);font-weight:700}
+.knockout-svg .tie-note{fill:var(--wiki-muted)}
+
+/* League progression graphs */
+.league-graph.google-style{background:#fff;border:1px solid var(--wiki-border);border-radius:0}
+
+@media(max-width:760px){
+  main{padding:0 12px}
+  h1{font-size:27px} h2{font-size:21px}
+  .sitebar{padding:9px 12px}.sitebar-links{gap:14px}
+  .fixture-table{table-layout:auto;font-size:13px}
+  .fixture-table .fixture-meta,.fixture-table td.meta{width:120px}
+  .fixture-table .fixture-home,.fixture-table td:nth-child(2),
+  .fixture-table .fixture-away,.fixture-table td:nth-child(4){
+    width:auto;padding-left:7px;padding-right:7px;
+  }
+  .fixture-table .fixture-score,.fixture-table td.score{width:52px;min-width:52px}
+}
+
+/* v4.0 — 2025/26 league play-off brackets, always after regular-season results */
+.playoff-section{margin-top:30px}
+.playoff-bracket{min-width:930px}
+.playoff-svg{display:block;width:930px;height:330px;background:#fff}
+.playoff-svg .round-title{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,Helvetica,sans-serif;
+  font-size:14px;font-weight:700;fill:#202122
+}
+.playoff-svg .tie-box{fill:#f8f9fa;stroke:#a2a9b1;stroke-width:1}
+.playoff-svg .tie-divider,.playoff-svg .score-divider{stroke:#a2a9b1;stroke-width:1}
+.playoff-svg .bracket-line{fill:none;stroke:#72777d;stroke-width:1.1}
+.playoff-svg .team,.playoff-svg .score{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,Helvetica,sans-serif;
+  font-size:12px;fill:#3366cc
+}
+.playoff-svg .score{fill:#202122}
+.playoff-svg .team.winner,.playoff-svg .score.winner{font-weight:700;fill:#202122}
+.playoff-svg .score-head,.playoff-svg .tie-note{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,Helvetica,sans-serif;
+  font-size:10px;fill:#54595d
+}
+
+
+/* Archive navigation: season/competition/club dropdowns and adjacent-season links */
+.sitebar { position: relative; z-index: 1000; }
+.sitebar-links { display:flex; align-items:stretch; gap:0; }
+.nav-dropdown { position:relative; display:flex; align-items:stretch; }
+.nav-dropdown > a, .nav-dropdown > button {
+  appearance:none; border:0; background:transparent; color:inherit; font:inherit;
+  font-weight:600; padding:.85rem .9rem; cursor:pointer; text-decoration:none;
+}
+.nav-dropdown > button::after { content:" ▾"; font-size:.78em; }
+.nav-dropdown-menu {
+  display:none; position:absolute; right:0; top:100%; min-width:220px; max-height:70vh;
+  overflow:auto; background:#fff; color:#202122; border:1px solid #a2a9b1;
+  box-shadow:0 3px 10px rgba(0,0,0,.18); padding:.3rem 0; z-index:1200;
+}
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu { display:block; }
+.nav-dropdown-menu a { display:block; padding:.42rem .75rem; color:#0645ad; white-space:nowrap; text-decoration:none; }
+.nav-dropdown-menu a:hover, .nav-dropdown-menu a:focus { background:#eaecf0; text-decoration:underline; }
+.season-switcher {
+  display:grid; grid-template-columns:1fr auto 1fr; align-items:center;
+  gap:1rem; margin:.2rem 0 .85rem; min-height:1.6rem; font-size:.95rem;
+}
+.season-switcher .previous { justify-self:start; }
+.season-switcher .current { justify-self:center; color:#54595d; font-weight:600; }
+.season-switcher .next { justify-self:end; }
+.season-switcher a { font-weight:600; }
+@media (max-width:700px) {
+  .sitebar { align-items:flex-start; }
+  .sitebar-links { flex-wrap:wrap; justify-content:flex-end; }
+  .nav-dropdown > a, .nav-dropdown > button { padding:.65rem .55rem; }
+  .nav-dropdown-menu { position:fixed; left:.5rem; right:.5rem; top:3.2rem; min-width:0; }
+  .season-switcher { grid-template-columns:1fr 1fr; }
+  .season-switcher .current { display:none; }
+}
+
+
+/* v4.3 club-season summary + cup-stage metadata */
+.club-season-summary { margin: 0 0 1.1rem; }
+.club-season-summary h2 { margin-bottom:.45rem; }
+.club-summary-table { width:auto; min-width:540px; margin:0; }
+.club-summary-table th, .club-summary-table td { text-align:center !important; width:56px !important; }
+.fixture-stage { font-weight:700; }
+.fixture-date { color:#54595d; font-size:.92em; }
+
+
+/* v4.6 stable Wikipedia-style knockout trees */
+.stable-bracket .bracket-line{fill:none;stroke:#72777d;stroke-width:1}
+.stable-bracket .tie-card{shape-rendering:geometricPrecision}
+
+/* v5.5 bracket legibility audit */
+.knockout-scroll{overflow-x:auto;overflow-y:visible}.knockout-svg .team,.knockout-svg .score{font-size:11px}.knockout-bracket{padding-bottom:12px}
+
+/* v5.7 exhaustive bracket legibility */
+.knockout-svg .team.compact-team{font-size:10px}
+
+/* Club records table */
+.club-records-table{border-collapse:collapse;width:100%;margin:.35rem 0 1.2rem;font-size:.94rem}
+.club-records-table th,.club-records-table td{border:1px solid #a2a9b1;padding:.42rem .55rem;vertical-align:top;text-align:left}
+.club-records-table thead th{background:#eaecf0;font-weight:700}
+.club-records-table tbody th{background:#f8f9fa;width:31%;font-weight:600}
+.club-records-table tbody td{line-height:1.45}
+
+
+/* v7.1 mobile-responsive archive pass */
+/* Desktop rules above remain the source of truth. These rules only adapt their
+   geometry to a narrow viewport while preserving the same typography, colours,
+   borders and information density. */
+@media (max-width: 760px) {
+  html { -webkit-text-size-adjust:100%; text-size-adjust:100%; }
+  body { width:auto; max-width:none; min-width:0; padding:0; overflow-x:hidden; }
+  main { width:auto; max-width:none; margin:18px auto 38px; padding:0 12px 34px; }
+
+  h1 { font-size:30px; line-height:1.12; margin-top:18px; }
+  h2 { font-size:21px; line-height:1.2; margin-top:28px; }
+  h3 { line-height:1.25; }
+  .lede { font-size:16px; }
+
+  /* Keep the archive masthead visually the same, but give it two clean rows. */
+  .sitebar { padding:8px 10px; gap:2px 8px; flex-wrap:wrap; align-items:center; }
+  .sitebar .brand { flex:1 0 100%; margin:0; padding:4px 2px 3px; font-size:15px; }
+  .sitebar-links { width:100%; display:flex; flex-wrap:nowrap; justify-content:flex-start; overflow:visible; }
+  .nav-dropdown { flex:0 0 auto; }
+  .nav-dropdown > a, .nav-dropdown > button { padding:.56rem .62rem; font-size:14px; }
+  .nav-dropdown-menu {
+    position:fixed; left:8px; right:8px; top:74px; min-width:0; width:auto;
+    max-height:calc(100vh - 84px); -webkit-overflow-scrolling:touch;
+  }
+  .nav-dropdown-menu a { padding:.52rem .72rem; font-size:15px; }
+
+  .season-switcher { gap:.5rem; margin:.15rem 0 .8rem; font-size:.9rem; }
+
+  /* Tables retain desktop column sizing. Narrow ones fit; wide archival tables
+     scroll horizontally rather than being crushed or reformatted. */
+  .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; margin-left:0; margin-right:0; }
+  .league-table.tidy { min-width:620px; }
+  .club-history.dynamic { min-width:760px; }
+  .club-index-table { min-width:560px; }
+  .manager-history { min-width:560px; }
+  .club-summary-table { min-width:540px; }
+  .major-honours-table { min-width:0; table-layout:auto; }
+  .major-honours-table th:first-child,.major-honours-table td:first-child { width:auto; white-space:normal; }
+
+  /* Club records are naturally two-column and should read like the desktop
+     version rather than becoming a stack of cards. */
+  .club-records-table { width:100%; table-layout:auto; font-size:13px; }
+  .club-records-table tbody th { width:34%; min-width:118px; }
+  .club-records-table th,.club-records-table td { padding:6px 7px; }
+
+  /* Match lists preserve the familiar home-score-away visual axis. */
+  .fixture-table { min-width:680px; table-layout:fixed; font-size:14px; }
+  .fixture-table .fixture-meta,.fixture-table td.meta { width:185px; }
+  .fixture-table .fixture-home,.fixture-table td:nth-child(2) {
+    width:calc((100% - 185px - 70px)/2); padding-right:12px;
+  }
+  .fixture-table .fixture-score,.fixture-table td.score { width:70px; min-width:70px; }
+  .fixture-table .fixture-away,.fixture-table td:nth-child(4) {
+    width:calc((100% - 185px - 70px)/2); padding-left:12px;
+  }
+  .round-block { padding:9px 8px; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+  table.results { min-width:600px; }
+
+  /* Brackets stay at legible desktop scale and pan naturally. */
+  .knockout-scroll { width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; padding-bottom:5px; }
+  .knockout-bracket { width:max-content; min-width:100%; }
+  .playoff-section { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+
+  /* Graph remains a faithful miniature of desktop, not a separate mobile chart. */
+  .league-graph { min-width:720px; }
+  .league-graph + .graph-legend { min-width:720px; }
+  .league-graph.google-style { max-width:none; }
+  main:has(.league-graph) .league-graph { display:block; }
+
+  .cards { grid-template-columns:1fr; }
+}
+
+/* v7.1.1 narrow-screen corrections: keep directly-rendered elements inside the viewport. */
+@media (max-width:760px) {
+  .club-summary-table { min-width:0; width:100%; table-layout:fixed; }
+  .club-summary-table th,.club-summary-table td { width:auto !important; padding:5px 3px; font-size:12px; }
+
+  .fixture-table { min-width:0; width:100%; table-layout:fixed; }
+  .fixture-table th,.fixture-table td { padding:5px 4px; font-size:12px; }
+  .fixture-table .fixture-meta,.fixture-table td.meta { width:92px; font-size:11px; }
+  .fixture-table .fixture-home,.fixture-table td:nth-child(2) {
+    width:calc((100% - 92px - 48px)/2); padding-left:3px; padding-right:5px;
+  }
+  .fixture-table .fixture-score,.fixture-table td.score { width:48px; min-width:48px; }
+  .fixture-table .fixture-away,.fixture-table td:nth-child(4) {
+    width:calc((100% - 92px - 48px)/2); padding-left:5px; padding-right:3px;
+  }
+
+  .league-graph,.league-graph + .graph-legend { min-width:0; width:100%; }
+}
+
+
+/* live tables — all generated league seasons */
+.round-live-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(390px,.85fr);gap:24px;align-items:start}
+.round-results-column{min-width:0}
+.round-live-layout .round-results-column table.results{width:100%;min-width:0;margin-left:0;margin-right:0}
+.live-table-panel{min-width:0;margin:8px 0 16px;border:1px solid var(--wiki-border, #a2a9b1);background:#fff}
+.live-table-title{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;background:#eaecf0;border-bottom:1px solid var(--wiki-border, #a2a9b1);padding:6px 8px;color:#202122}
+table.live-table{width:100%;margin:0;border-collapse:collapse;table-layout:auto;font-family:Arial,Helvetica,sans-serif;font-size:12px;background:#fff}
+table.live-table th,table.live-table td{padding:3px 6px;border-bottom:1px solid #eaecf0;text-align:right;white-space:nowrap}
+table.live-table th{background:#f8f9fa;font-weight:700}
+table.live-table th:nth-child(3),table.live-table td.live-team{text-align:left;width:100%;white-space:normal}
+table.live-table td:first-child,table.live-table th:first-child{text-align:right;width:28px}
+table.live-table td.live-pts{font-weight:700}
+table.live-table tbody tr:last-child td{border-bottom:0}
+@media(max-width:900px){.round-live-layout{grid-template-columns:1fr;gap:6px}.live-table-panel{margin-top:2px}.round-live-layout .round-results-column table.results{min-width:600px}.live-table-panel{min-width:390px}}
+
+/* live-table competition-zone boundary — Alpha relegation places */
+table.live-table tr.live-boundary-relegation td{border-top:3px solid #a33}
+
+table.live-table tr.live-boundary-auto td{border-bottom:3px solid #3366cc}
+
+table.live-table tr.live-boundary-playoff td{border-bottom:3px solid #b8860b}
+
+/* mathematical status markers on live tables */
+table.live-table .live-status{font-weight:700;white-space:nowrap}
+
+
+
+
+/* Club-season live league position column — v7.3 all seasons */
+.fixture-table.with-league-position .fixture-pos,.fixture-table.with-league-position td.league-position{width:48px;min-width:48px;text-align:center;font-weight:700}
+.fixture-table.with-league-position .fixture-home,.fixture-table.with-league-position td:nth-child(2),
+.fixture-table.with-league-position .fixture-away,.fixture-table.with-league-position td:nth-child(4){width:calc((100% - 185px - 70px - 48px)/2)}
+@media (max-width:760px){
+  .fixture-table.with-league-position .fixture-pos,.fixture-table.with-league-position td.league-position{width:34px;min-width:34px}
+  .fixture-table.with-league-position .fixture-home,.fixture-table.with-league-position td:nth-child(2),
+  .fixture-table.with-league-position .fixture-away,.fixture-table.with-league-position td:nth-child(4){width:calc((100% - 92px - 48px - 34px)/2)}
+}
+
+/* Club ground photograph */
+.club-ground-photo { margin: 1.25rem 0 1.5rem; max-width: 960px; }
+.club-ground-photo img { display: block; width: 100%; height: auto; border: 1px solid #a2a9b1; }
+.club-ground-photo figcaption { margin-top: .35rem; font-size: .875rem; color: #54595d; }
+
+/* HEAD-TO-HEAD */
+.h2h-selector{display:flex;gap:.6rem;align-items:end;flex-wrap:wrap;margin:1rem 0 1.5rem}.h2h-selector label{font-weight:600}.h2h-selector select{display:block;min-width:240px;padding:.35rem;border:1px solid #a2a9b1;background:white}.h2h-selector button{padding:.38rem .8rem}.h2h-summary{width:auto;min-width:620px}.h2h-meetings td,.h2h-meetings th{white-space:nowrap}.h2h-meetings .score{text-align:center;font-weight:600}.h2h-note{font-size:.9em;color:#54595d}.h2h-nav-link{padding:.45rem .6rem;text-decoration:none}@media(max-width:700px){.h2h-summary{min-width:0;width:100%}.h2h-meetings{font-size:.84em}.h2h-selector select{min-width:210px}}
