@@ -593,3 +593,14 @@ table.live-table .live-status{font-weight:700;white-space:nowrap}
 
 /* HEAD-TO-HEAD */
 .h2h-selector{display:flex;gap:.6rem;align-items:end;flex-wrap:wrap;margin:1rem 0 1.5rem}.h2h-selector label{font-weight:600}.h2h-selector select{display:block;min-width:240px;padding:.35rem;border:1px solid #a2a9b1;background:white}.h2h-selector button{padding:.38rem .8rem}.h2h-summary{width:auto;min-width:620px}.h2h-meetings td,.h2h-meetings th{white-space:nowrap}.h2h-meetings .score{text-align:center;font-weight:600}.h2h-note{font-size:.9em;color:#54595d}.h2h-nav-link{padding:.45rem .6rem;text-decoration:none}@media(max-width:700px){.h2h-summary{min-width:0;width:100%}.h2h-meetings{font-size:.84em}.h2h-selector select{min-width:210px}}
+
+/* Head-to-head result colours — perspective of alphabetically first club */
+.h2h-meetings tbody tr.h2h-win > td {
+  background-color: #e6f4ea;
+}
+.h2h-meetings tbody tr.h2h-draw > td {
+  background-color: #f1f3f4;
+}
+.h2h-meetings tbody tr.h2h-loss > td {
+  background-color: #fce8e6;
+}
