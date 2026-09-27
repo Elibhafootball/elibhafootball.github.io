@@ -596,11 +596,11 @@ table.live-table .live-status{font-weight:700;white-space:nowrap}
 
 /* Head-to-head result colours — perspective of alphabetically first club */
 .h2h-meetings tbody tr.h2h-win > td {
-  background-color: #e6f4ea;
+  background-color: #b7dfc2;
 }
 .h2h-meetings tbody tr.h2h-draw > td {
-  background-color: #f1f3f4;
+  background-color: #e0e0e0;
 }
 .h2h-meetings tbody tr.h2h-loss > td {
-  background-color: #fce8e6;
+  background-color: #f2b8b5;
 }
