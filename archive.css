@@ -608,12 +608,12 @@ table.live-table .live-status{font-weight:700;white-space:nowrap}
 /* Larger club crests, positioned further left on desktop */
 @media (min-width: 801px) {
   .club-identity-crest {
-    margin-right: 90px !important;
+    margin-right: 200px !important;
   }
 
   .club-identity-crest img {
-    width: 210px !important;
-    max-width: 210px !important;
+    width: 300px !important;
+    max-width: 300px !important;
     height: auto !important;
   }
 }
