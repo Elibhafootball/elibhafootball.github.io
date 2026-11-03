@@ -605,15 +605,20 @@ table.live-table .live-status{font-weight:700;white-space:nowrap}
   background-color: #f2b8b5;
 }
 
-/* Larger club crests, positioned further left on desktop */
+/* Larger club crests, further left on desktop */
 @media (min-width: 801px) {
   .club-identity-crest {
+    width: 300px !important;
+    height: 300px !important;
+    flex: 0 0 300px !important;
     margin-right: 200px !important;
   }
 
   .club-identity-crest img {
     width: 300px !important;
-    max-width: 300px !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
     height: auto !important;
+    object-fit: contain;
   }
 }
