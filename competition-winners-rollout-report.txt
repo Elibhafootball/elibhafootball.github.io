@@ -1,56 +1,7 @@
-Added: 50
+Added: 0
 Skipped: 80
 
-ADDED brados-cup-1958-59.html: FC Brados
-ADDED brados-cup-1959-60.html: FC Brados
-ADDED brados-cup-1960-61.html: Stoneleigh Town
-ADDED brados-cup-1961-62.html: West Heath Rangers
-ADDED brados-cup-1962-63.html: West Heath Rangers
-ADDED brados-cup-1963-64.html: FC Brados
-ADDED brados-cup-1964-65.html: East Camberwell United
-ADDED brados-cup-1965-66.html: Real San Domingo
-ADDED brados-cup-1966-67.html: FC Brados
-ADDED brados-cup-1967-68.html: Stoneleigh Town
-ADDED brados-cup-1968-69.html: FC Brados
-ADDED brados-cup-1969-70.html: East Camberwell United
-ADDED brados-cup-1970-71.html: East Camberwell United
-ADDED brados-cup-1971-72.html: West Heath Rangers
-ADDED denton-cup-1956-57.html: Hardwick Rovers
-ADDED denton-cup-1958-59.html: Southcastle United
-ADDED denton-cup-1960-61.html: Southcastle United
-ADDED denton-cup-1962-63.html: Southcastle United
-ADDED denton-cup-1963-64.html: Southcastle United
-ADDED denton-cup-1964-65.html: Whatton 004
-ADDED denton-cup-1965-66.html: Southcastle United
-ADDED denton-cup-1966-67.html: Hardwick Rovers
-ADDED denton-cup-1967-68.html: Southcastle United
-ADDED denton-cup-1968-69.html: Dynamo Denton
-ADDED denton-cup-1969-70.html: Hardwick Rovers
-ADDED denton-cup-1970-71.html: Dynamo Denton
-ADDED denton-cup-1971-72.html: Dynamo Denton
-ADDED gresdon-cup-1962-63.html: New Lincoln
-ADDED gresdon-cup-1963-64.html: Gresdon Town
-ADDED gresdon-cup-1964-65.html: Gresdon Town
-ADDED gresdon-cup-1965-66.html: New Plymouth Mariners
-ADDED gresdon-cup-1966-67.html: New Plymouth Mariners
-ADDED gresdon-cup-1967-68.html: Gresdon Town
-ADDED gresdon-cup-1968-69.html: Gresdon Town
-ADDED gresdon-cup-1969-70.html: Gresdon Town
-ADDED gresdon-cup-1970-71.html: New Lincoln
-ADDED gresdon-cup-1971-72.html: Gresdon Town
-ADDED warfield-cup-1959-60.html: Warfield Industrial
-ADDED warfield-cup-1960-61.html: Warfield Industrial
-ADDED warfield-cup-1961-62.html: Mannion
-ADDED warfield-cup-1962-63.html: Large United
-ADDED warfield-cup-1963-64.html: Queenstown Riot
-ADDED warfield-cup-1964-65.html: Large United
-ADDED warfield-cup-1965-66.html: Warfield Industrial
-ADDED warfield-cup-1966-67.html: Warfield Industrial
-ADDED warfield-cup-1967-68.html: Warfield Industrial
-ADDED warfield-cup-1968-69.html: Large United
-ADDED warfield-cup-1969-70.html: Warfield Industrial
-ADDED warfield-cup-1970-71.html: Warfield Industrial
-ADDED warfield-cup-1971-72.html: Warfield Industrial
+
 
 SKIP denton-cup-1994-95.html: winner not unambiguous
 SKIP denton-cup-1996-97.html: winner not unambiguous
