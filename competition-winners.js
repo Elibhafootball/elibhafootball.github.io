@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!name || !href) return;
 
   const clubSlug = href.split("/").pop().replace(/\.html$/, "");
-  const crestPath = "../" + clubSlug + ".png";
+  const crestPath = "../clubs/crests/" + clubSlug + ".png";
 
   const panel = document.createElement("section");
   panel.className = "competition-winner-panel";
