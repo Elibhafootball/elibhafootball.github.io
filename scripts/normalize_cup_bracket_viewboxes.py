@@ -15,10 +15,18 @@ for file in sorted(root.glob("*.html")):
         tag = match.group(0)
         if 'class="knockout-svg' not in tag:
             return tag
-        actual = re.search(r'\sviewBox="[^"]+"', tag)
-        if not actual:
+        # The original generated width and height are the true diagram bounds.
+        # Many Masherat cups retained a larger, obsolete viewbox from a previous
+        # layout. This scales both text and tie boxes down to illegibility.
+        # Preserve the FA Cup's existing formatting as the reference.
+        if file.name.startswith("fa-cup-"):
             return tag
-        return re.sub(r'\sviewbox="[^"]+"', '', tag)
+        width = re.search(r'\bwidth="([0-9.]+)"', tag)
+        height = re.search(r'\bheight="([0-9.]+)"', tag)
+        if not width or not height:
+            return tag
+        tag = re.sub(r'\sview[Bb]ox="[^"]+"', '', tag)
+        return tag[:-1] + f' viewBox="0 0 {width.group(1)} {height.group(1)}">'
     result = re.sub(r'<svg\b[^>]*>', fix, source)
     if result != source:
         file.write_text(result, encoding="utf-8")
