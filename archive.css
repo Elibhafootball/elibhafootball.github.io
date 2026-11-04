@@ -630,3 +630,32 @@ table.live-table .live-status{font-weight:700;white-space:nowrap}
 .competition-winner-name { font-size:clamp(22px,3vw,32px); line-height:1.2; font-weight:750; color:#193e68; text-decoration:none; }
 .competition-winner-name:hover { text-decoration:underline; }
 @media(max-width:600px) { .competition-winner-panel { gap:14px; padding:15px; } .competition-winner-crest { width:72px; height:72px; flex-basis:72px; } }
+
+
+/* Mobile league tables: preserve club names and numeric columns.
+   The table scrolls inside its wrapper rather than squeezing the club column. */
+@media (max-width:760px) {
+  .table-wrap:has(> .league-table.tidy) {
+    display:block;
+    width:100%;
+    max-width:100%;
+    overflow-x:auto;
+    overscroll-behavior-x:contain;
+    -webkit-overflow-scrolling:touch;
+  }
+  .table-wrap > .league-table.tidy {
+    width:1000px;
+    min-width:1000px;
+    table-layout:fixed;
+  }
+  .table-wrap > .league-table.tidy th.club,
+  .table-wrap > .league-table.tidy td.club {
+    width:250px;
+    min-width:250px;
+    white-space:nowrap;
+  }
+  .table-wrap > .league-table.tidy th.pos,
+  .table-wrap > .league-table.tidy td.pos { width:46px; }
+  .table-wrap > .league-table.tidy th:not(.pos):not(.club),
+  .table-wrap > .league-table.tidy td:not(.pos):not(.club) { width:65px; }
+}
