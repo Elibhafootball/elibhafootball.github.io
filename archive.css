@@ -622,3 +622,11 @@ table.live-table .live-status{font-weight:700;white-space:nowrap}
     object-fit: contain;
   }
 }
+
+/* Competition season winners */
+.competition-winner-panel { display:flex; align-items:center; gap:22px; padding:20px 26px; margin:22px 0 28px; border:1px solid #c8cdd4; border-left:6px solid #24466e; border-radius:8px; background:#f5f7fa; }
+.competition-winner-crest { display:block; width:100px; height:100px; object-fit:contain; flex:0 0 100px; }
+.competition-winner-label { font-size:13px; font-weight:700; letter-spacing:.11em; text-transform:uppercase; color:#526174; margin-bottom:7px; }
+.competition-winner-name { font-size:clamp(22px,3vw,32px); line-height:1.2; font-weight:750; color:#193e68; text-decoration:none; }
+.competition-winner-name:hover { text-decoration:underline; }
+@media(max-width:600px) { .competition-winner-panel { gap:14px; padding:15px; } .competition-winner-crest { width:72px; height:72px; flex-basis:72px; } }
