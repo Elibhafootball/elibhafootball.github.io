@@ -8,6 +8,7 @@ on:
   workflow_run:
     workflows:
       - Populate competition winners panels
+      - Rebuild early Masherat Cup tables
     types:
       - completed
 
