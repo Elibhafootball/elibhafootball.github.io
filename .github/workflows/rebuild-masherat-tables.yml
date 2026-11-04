@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - scripts/rebuild_masherat_tables.py
+      - .github/workflows/rebuild-masherat-tables.yml
   workflow_dispatch:
 permissions:
   contents: write
@@ -22,5 +23,11 @@ jobs:
           git add competitions/ masherat-table-rebuild-report.txt
           if ! git diff --cached --quiet; then
             git commit -m "Recalculate early Masherat Cup tables from match results"
-            git push
+            for attempt in 1 2 3 4 5; do
+              git fetch origin master
+              git rebase origin/master
+              if git push origin HEAD:master; then exit 0; fi
+              sleep 3
+            done
+            exit 1
           fi
