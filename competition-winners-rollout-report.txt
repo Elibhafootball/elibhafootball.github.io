@@ -1,0 +1,782 @@
+Added: 648
+Skipped: 130
+
+ADDED alpha-league-1969-70.html: Dynamo Denton
+ADDED alpha-league-1970-71.html: Warfield Industrial
+ADDED alpha-league-1971-72.html: Hardwick Rovers
+ADDED alpha-league-1972-73.html: Dynamo Denton
+ADDED alpha-league-1973-74.html: FC Brados
+ADDED alpha-league-1974-75.html: FC Brados
+ADDED alpha-league-1975-76.html: Hardwick Rovers
+ADDED alpha-league-1977-78.html: Dynamo Denton
+ADDED alpha-league-1978-79.html: FC Brados
+ADDED alpha-league-1979-80.html: FC Brados
+ADDED alpha-league-1980-81.html: Southcastle United
+ADDED alpha-league-1981-82.html: Southcastle United
+ADDED alpha-league-1982-83.html: FC Brados
+ADDED alpha-league-1983-84.html: Hardwick Rovers
+ADDED alpha-league-1984-85.html: Partizan Warfield
+ADDED alpha-league-1985-86.html: Hardwick Rovers
+ADDED alpha-league-1986-87.html: FC Brados
+ADDED alpha-league-1987-88.html: Hardwick Rovers
+ADDED alpha-league-1988-89.html: North Denton United
+ADDED alpha-league-1989-90.html: FC Brados
+ADDED alpha-league-1990-91.html: Dynamo Denton
+ADDED alpha-league-1991-92.html: Hardwick Rovers
+ADDED alpha-league-1992-93.html: Dynamo Denton
+ADDED alpha-league-1993-94.html: Dynamo Denton
+ADDED alpha-league-1994-95.html: Partizan Warfield
+ADDED alpha-league-1995-96.html: Partizan Warfield
+ADDED alpha-league-1996-97.html: Gresdon Town
+ADDED alpha-league-1997-98.html: FC Brados
+ADDED alpha-league-1998-99.html: Dynamo Denton
+ADDED alpha-league-1999-00.html: FC Brados
+ADDED alpha-league-2000-01.html: FC Brados
+ADDED alpha-league-2001-02.html: FC Brados
+ADDED alpha-league-2002-03.html: Partizan Warfield
+ADDED alpha-league-2003-04.html: FC Brados
+ADDED alpha-league-2004-05.html: West Heath Rangers
+ADDED alpha-league-2005-06.html: West Heath Rangers
+ADDED alpha-league-2006-07.html: Hardwick Rovers
+ADDED alpha-league-2007-08.html: Hardwick Rovers
+ADDED alpha-league-2008-09.html: Dynamo Denton
+ADDED alpha-league-2009-10.html: FC Brados
+ADDED alpha-league-2010-11.html: FC Brados
+ADDED alpha-league-2011-12.html: West Heath Rangers
+ADDED alpha-league-2012-13.html: Dynamo Denton
+ADDED alpha-league-2013-14.html: East Camberwell United
+ADDED alpha-league-2014-15.html: Partizan Warfield
+ADDED alpha-league-2015-16.html: FC Brados
+ADDED alpha-league-2016-17.html: West Heath Rangers
+ADDED alpha-league-2017-18.html: FC Brados
+ADDED alpha-league-2018-19.html: Partizan Warfield
+ADDED alpha-league-2019-20.html: FC Brados
+ADDED alpha-league-2020-21.html: Partizan Warfield
+ADDED alpha-league-2021-22.html: Partizan Warfield
+ADDED alpha-league-2022-23.html: Hardwick Rovers
+ADDED alpha-league-2023-24.html: West Heath Rangers
+ADDED alpha-league-2024-25.html: West Heath Rangers
+ADDED alpha-league-2025-26.html: West Heath Rangers (C)
+ADDED beta-league-1969-70.html: Whatton 004
+ADDED beta-league-1970-71.html: New Lincoln
+ADDED beta-league-1971-72.html: North Denton United
+ADDED beta-league-1972-73.html: Purditon Town
+ADDED beta-league-1973-74.html: Frotes Juniors
+ADDED beta-league-1974-75.html: New Plymouth Mariners
+ADDED beta-league-1975-76.html: Real San Domingo
+ADDED beta-league-1976-77.html: Georgetown Atlantic
+ADDED beta-league-1977-78.html: Walpool Seagulls
+ADDED beta-league-1978-79.html: Windaybank Thistle
+ADDED beta-league-1979-80.html: New Lincoln
+ADDED beta-league-1980-81.html: Whatton 004
+ADDED beta-league-1981-82.html: St John Meridian
+ADDED beta-league-1982-83.html: Wyvernmouth Dockers
+ADDED beta-league-1983-84.html: Maulover Bay Rowdies
+ADDED beta-league-1984-85.html: Lambeth
+ADDED beta-league-1985-86.html: Walpool Seagulls
+ADDED beta-league-1986-87.html: Whatton 004
+ADDED beta-league-1987-88.html: Kirkby Harriers
+ADDED beta-league-1988-89.html: West Heath Rangers
+ADDED beta-league-1989-90.html: Whatton 004
+ADDED beta-league-1990-91.html: Redmond Town
+ADDED beta-league-1991-92.html: Southcastle United
+ADDED beta-league-1992-93.html: Georgetown Atlantic
+ADDED beta-league-1993-94.html: Adelaide Wanderers
+ADDED beta-league-1994-95.html: Queenstown Riot
+ADDED beta-league-1995-96.html: Southcastle United
+ADDED beta-league-1996-97.html: Sunnymede Rangers
+ADDED beta-league-1997-98.html: Stoneleigh Town
+ADDED beta-league-1998-99.html: Lambeth
+ADDED beta-league-1999-00.html: New Plymouth Mariners
+ADDED beta-league-2000-01.html: La Robla
+ADDED beta-league-2001-02.html: Georgetown Atlantic
+ADDED beta-league-2002-03.html: Lambeth
+ADDED beta-league-2003-04.html: Antonito Boilermen
+ADDED beta-league-2004-05.html: Stoneleigh Town
+ADDED beta-league-2005-06.html: Frotes Juniors
+ADDED beta-league-2006-07.html: Brunigton Town
+ADDED beta-league-2007-08.html: Stoneleigh Town
+ADDED beta-league-2008-09.html: Lavender Park
+ADDED beta-league-2009-10.html: Windaybank Thistle
+ADDED beta-league-2010-11.html: East Camberwell United
+ADDED beta-league-2011-12.html: Southcastle United
+ADDED beta-league-2012-13.html: North Denton United
+ADDED beta-league-2013-14.html: Port Bristol Rovers
+ADDED beta-league-2014-15.html: Gresdon Town
+ADDED beta-league-2015-16.html: Maulover Bay Rowdies
+ADDED beta-league-2016-17.html: New Lincoln
+ADDED beta-league-2017-18.html: Sunnymede Rangers
+ADDED beta-league-2018-19.html: Vaughanstown
+ADDED beta-league-2019-20.html: Dockside Admirals
+ADDED beta-league-2020-21.html: Brunigton Town
+ADDED beta-league-2021-22.html: Brizes Apps
+ADDED beta-league-2022-23.html: Lavender Park
+ADDED beta-league-2023-24.html: Port Bristol Rovers
+ADDED beta-league-2024-25.html: Large United
+ADDED beta-league-2025-26.html: New Lincoln (C)
+ADDED brados-cup-1972-73.html: East Camberwell United
+ADDED brados-cup-1973-74.html: FC Brados
+ADDED brados-cup-1974-75.html: Dockside Admirals (p)
+ADDED brados-cup-1975-76.html: West Heath Rangers
+ADDED brados-cup-1976-77.html: FC Brados
+ADDED brados-cup-1977-78.html: Stoneleigh Town
+ADDED brados-cup-1978-79.html: West Heath Rangers
+ADDED brados-cup-1979-80.html: FC Brados
+ADDED brados-cup-1980-81.html: Stoneleigh Town
+ADDED brados-cup-1981-82.html: FC Brados
+ADDED brados-cup-1982-83.html: FC Brados
+ADDED brados-cup-1983-84.html: FC Brados
+ADDED brados-cup-1984-85.html: FC Brados
+ADDED brados-cup-1985-86.html: Maulover Bay Rowdies
+ADDED brados-cup-1986-87.html: La Robla
+ADDED brados-cup-1987-88.html: East Camberwell United
+ADDED brados-cup-1988-89.html: FC Brados
+ADDED brados-cup-1989-90.html: FC Brados
+ADDED brados-cup-1990-91.html: FC Brados
+ADDED brados-cup-1991-92.html: FC Brados
+ADDED brados-cup-1992-93.html: East Camberwell United
+ADDED brados-cup-1993-94.html: FC Brados
+ADDED brados-cup-1994-95.html: East Camberwell United
+ADDED brados-cup-1995-96.html: FC Brados
+ADDED brados-cup-1996-97.html: East Camberwell United
+ADDED brados-cup-1997-98.html: FC Brados
+ADDED brados-cup-1998-99.html: FC Brados
+ADDED brados-cup-1999-00.html: FC Brados
+ADDED brados-cup-2000-01.html: Georgetown Atlantic
+ADDED brados-cup-2001-02.html: La Robla
+ADDED brados-cup-2002-03.html: Purditon Town
+ADDED brados-cup-2003-04.html: Maulover Bay Rowdies
+ADDED brados-cup-2004-05.html: FC Brados (p)
+ADDED brados-cup-2005-06.html: West Heath Rangers
+ADDED brados-cup-2006-07.html: Dockside Admirals
+ADDED brados-cup-2007-08.html: FC Brados
+ADDED brados-cup-2008-09.html: West Heath Rangers
+ADDED brados-cup-2009-10.html: FC Brados
+ADDED brados-cup-2010-11.html: FC Brados
+ADDED brados-cup-2011-12.html: Walpool Seagulls
+ADDED brados-cup-2012-13.html: West Heath Rangers
+ADDED brados-cup-2013-14.html: West Heath Rangers
+ADDED brados-cup-2014-15.html: Stoneleigh Town (p)
+ADDED brados-cup-2015-16.html: FC Brados
+ADDED brados-cup-2016-17.html: La Robla
+ADDED brados-cup-2017-18.html: FC Brados
+ADDED brados-cup-2018-19.html: West Heath Rangers
+ADDED brados-cup-2019-20.html: Walpool Seagulls
+ADDED brados-cup-2020-21.html: Walpool Seagulls
+ADDED brados-cup-2021-22.html: FC Brados
+ADDED brados-cup-2022-23.html: West Heath Rangers
+ADDED brados-cup-2023-24.html: West Heath Rangers
+ADDED brados-cup-2024-25.html: FC Brados
+ADDED brados-cup-2025-26.html: East Camberwell United (p)
+ADDED denton-cup-1957-58.html: Dynamo Denton
+ADDED denton-cup-1959-60.html: Dynamo Denton
+ADDED denton-cup-1961-62.html: Hardwick Rovers
+ADDED denton-cup-1972-73.html: Hardwick Rovers
+ADDED denton-cup-1973-74.html: North Denton United
+ADDED denton-cup-1974-75.html: North Denton United
+ADDED denton-cup-1975-76.html: Dynamo Denton (p)
+ADDED denton-cup-1976-77.html: Hardwick Rovers
+ADDED denton-cup-1977-78.html: Whatton 004
+ADDED denton-cup-1978-79.html: North Denton United
+ADDED denton-cup-1979-80.html: Dynamo Denton
+ADDED denton-cup-1980-81.html: Windaybank Thistle
+ADDED denton-cup-1981-82.html: Dynamo Denton
+ADDED denton-cup-1982-83.html: Lambeth
+ADDED denton-cup-1983-84.html: Whatton 004 (p)
+ADDED denton-cup-1984-85.html: Dynamo Denton (p)
+ADDED denton-cup-1985-86.html: North Denton United
+ADDED denton-cup-1986-87.html: Hardwick Rovers
+ADDED denton-cup-1987-88.html: Southcastle United
+ADDED denton-cup-1988-89.html: Hardwick Rovers
+ADDED denton-cup-1989-90.html: Lambeth (p)
+ADDED denton-cup-1990-91.html: Dynamo Denton
+ADDED denton-cup-1991-92.html: Hardwick Rovers
+ADDED denton-cup-1992-93.html: Dynamo Denton
+ADDED denton-cup-1993-94.html: Hardwick Rovers
+ADDED denton-cup-1995-96.html: Hardwick Rovers
+ADDED denton-cup-1997-98.html: North Denton United
+ADDED denton-cup-1998-99.html: Whatton 004
+ADDED denton-cup-1999-00.html: Dynamo Denton
+ADDED denton-cup-2000-01.html: Hardwick Rovers
+ADDED denton-cup-2001-02.html: Dynamo Denton
+ADDED denton-cup-2002-03.html: Southcastle United
+ADDED denton-cup-2003-04.html: Dynamo Denton
+ADDED denton-cup-2004-05.html: Hardwick Rovers
+ADDED denton-cup-2005-06.html: Southcastle United
+ADDED denton-cup-2006-07.html: Dynamo Denton
+ADDED denton-cup-2007-08.html: Southcastle United
+ADDED denton-cup-2008-09.html: Chapeltown Academical
+ADDED denton-cup-2009-10.html: Whatton 004
+ADDED denton-cup-2010-11.html: Hardwick Rovers
+ADDED denton-cup-2011-12.html: Whatton 004
+ADDED denton-cup-2012-13.html: Brunigton Town
+ADDED denton-cup-2013-14.html: Brunigton Town
+ADDED denton-cup-2014-15.html: Dynamo Denton
+ADDED denton-cup-2015-16.html: Dynamo Denton
+ADDED denton-cup-2016-17.html: Sunnymede Rangers
+ADDED denton-cup-2017-18.html: Courton Lees
+ADDED denton-cup-2018-19.html: Hardwick Rovers
+ADDED denton-cup-2019-20.html: Dynamo Denton
+ADDED denton-cup-2020-21.html: Southcastle United
+ADDED denton-cup-2021-22.html: North Denton United
+ADDED denton-cup-2022-23.html: Whatton 004
+ADDED denton-cup-2023-24.html: Hardwick Rovers
+ADDED denton-cup-2024-25.html: Hardwick Rovers
+ADDED denton-cup-2025-26.html: Dynamo Denton (p)
+ADDED errol-bacchus-shield-1971-72.html: Warfield Industrial
+ADDED errol-bacchus-shield-1972-73.html: Hardwick Rovers
+ADDED errol-bacchus-shield-1973-74.html: Dynamo Denton
+ADDED errol-bacchus-shield-1974-75.html: North Denton United
+ADDED errol-bacchus-shield-1975-76.html: FC Brados
+ADDED errol-bacchus-shield-1976-77.html: Hardwick Rovers
+ADDED errol-bacchus-shield-1977-78.html: East Camberwell United
+ADDED errol-bacchus-shield-1978-79.html: FC Brados
+ADDED errol-bacchus-shield-1979-80.html: FC Brados
+ADDED errol-bacchus-shield-1980-81.html: Large United
+ADDED errol-bacchus-shield-1981-82.html: Southcastle United
+ADDED errol-bacchus-shield-1982-83.html: Southcastle United
+ADDED errol-bacchus-shield-1983-84.html: FC Brados
+ADDED errol-bacchus-shield-1985-86.html: North Denton United
+ADDED errol-bacchus-shield-1986-87.html: Hardwick Rovers (p)
+ADDED errol-bacchus-shield-1987-88.html: North Denton United
+ADDED errol-bacchus-shield-1988-89.html: East Camberwell United
+ADDED errol-bacchus-shield-1989-90.html: Hardwick Rovers (p)
+ADDED errol-bacchus-shield-1990-91.html: West Heath Rangers (p)
+ADDED errol-bacchus-shield-1991-92.html: Dynamo Denton
+ADDED errol-bacchus-shield-1993-94.html: Dynamo Denton
+ADDED errol-bacchus-shield-1994-95.html: Dynamo Denton
+ADDED errol-bacchus-shield-1995-96.html: Partizan Warfield
+ADDED errol-bacchus-shield-1996-97.html: Hardwick Rovers (p)
+ADDED errol-bacchus-shield-1997-98.html: East Camberwell United
+ADDED errol-bacchus-shield-1998-99.html: Hardwick Rovers
+ADDED errol-bacchus-shield-1999-00.html: Dynamo Denton
+ADDED errol-bacchus-shield-2000-01.html: FC Brados
+ADDED errol-bacchus-shield-2001-02.html: Hardwick Rovers
+ADDED errol-bacchus-shield-2002-03.html: FC Brados
+ADDED errol-bacchus-shield-2003-04.html: Partizan Warfield
+ADDED errol-bacchus-shield-2004-05.html: West Heath Rangers
+ADDED errol-bacchus-shield-2005-06.html: West Heath Rangers
+ADDED errol-bacchus-shield-2006-07.html: West Heath Rangers
+ADDED errol-bacchus-shield-2007-08.html: Dynamo Denton
+ADDED errol-bacchus-shield-2008-09.html: Whatton 004 (p)
+ADDED errol-bacchus-shield-2009-10.html: FC Brados
+ADDED errol-bacchus-shield-2010-11.html: FC Brados
+ADDED errol-bacchus-shield-2011-12.html: FC Brados
+ADDED errol-bacchus-shield-2012-13.html: Dynamo Denton
+ADDED errol-bacchus-shield-2013-14.html: Dynamo Denton
+ADDED errol-bacchus-shield-2014-15.html: New Lincoln
+ADDED errol-bacchus-shield-2015-16.html: Partizan Warfield
+ADDED errol-bacchus-shield-2016-17.html: Warfield Industrial
+ADDED errol-bacchus-shield-2017-18.html: FC Brados
+ADDED errol-bacchus-shield-2018-19.html: Dynamo Denton
+ADDED errol-bacchus-shield-2019-20.html: Partizan Warfield (p)
+ADDED errol-bacchus-shield-2020-21.html: FC Brados
+ADDED errol-bacchus-shield-2021-22.html: Partizan Warfield
+ADDED errol-bacchus-shield-2024-25.html: West Heath Rangers
+ADDED fa-cup-1970-71.html: East Camberwell United
+ADDED fa-cup-1971-72.html: Hardwick Rovers
+ADDED fa-cup-1972-73.html: Southcastle United
+ADDED fa-cup-1973-74.html: North Denton United
+ADDED fa-cup-1974-75.html: FC Brados
+ADDED fa-cup-1975-76.html: FC Brados
+ADDED fa-cup-1976-77.html: Hardwick Rovers
+ADDED fa-cup-1977-78.html: FC Brados
+ADDED fa-cup-1978-79.html: Stoneleigh Town
+ADDED fa-cup-1979-80.html: Large United
+ADDED fa-cup-1980-81.html: Partizan Warfield
+ADDED fa-cup-1981-82.html: Hardwick Rovers
+ADDED fa-cup-1982-83.html: Partizan Warfield
+ADDED fa-cup-1983-84.html: Dynamo Denton (p)
+ADDED fa-cup-1984-85.html: North Denton United
+ADDED fa-cup-1985-86.html: Hardwick Rovers
+ADDED fa-cup-1986-87.html: North Denton United
+ADDED fa-cup-1987-88.html: East Camberwell United
+ADDED fa-cup-1988-89.html: North Denton United
+ADDED fa-cup-1989-90.html: West Heath Rangers
+ADDED fa-cup-1990-91.html: Whatton 004
+ADDED fa-cup-1992-93.html: Redmond Town
+ADDED fa-cup-1993-94.html: West Heath Rangers
+ADDED fa-cup-1994-95.html: Whatton 004
+ADDED fa-cup-1995-96.html: Partizan Warfield
+ADDED fa-cup-1996-97.html: East Camberwell United
+ADDED fa-cup-1997-98.html: Hardwick Rovers
+ADDED fa-cup-1998-99.html: Walpool Seagulls (p)
+ADDED fa-cup-1999-00.html: FC Brados
+ADDED fa-cup-2000-01.html: Hardwick Rovers
+ADDED fa-cup-2001-02.html: Partizan Warfield (p)
+ADDED fa-cup-2002-03.html: Partizan Warfield
+ADDED fa-cup-2003-04.html: West Heath Rangers
+ADDED fa-cup-2004-05.html: Gresdon Town
+ADDED fa-cup-2005-06.html: Partizan Warfield (p)
+ADDED fa-cup-2006-07.html: Dynamo Denton (p)
+ADDED fa-cup-2007-08.html: Whatton 004
+ADDED fa-cup-2008-09.html: FC Brados
+ADDED fa-cup-2009-10.html: FC Brados
+ADDED fa-cup-2010-11.html: Lavender Park
+ADDED fa-cup-2011-12.html: Dynamo Denton
+ADDED fa-cup-2012-13.html: FC Brados
+ADDED fa-cup-2013-14.html: New Lincoln
+ADDED fa-cup-2014-15.html: Dockside Admirals
+ADDED fa-cup-2015-16.html: Warfield Industrial
+ADDED fa-cup-2016-17.html: West Heath Rangers
+ADDED fa-cup-2017-18.html: Dynamo Denton
+ADDED fa-cup-2018-19.html: FC Brados
+ADDED fa-cup-2019-20.html: FC Brados
+ADDED fa-cup-2020-21.html: Partizan Warfield
+ADDED fa-cup-2021-22.html: Brunigton Town (p)
+ADDED fa-cup-2022-23.html: West Heath Rangers
+ADDED fa-cup-2023-24.html: Southcastle United
+ADDED fa-cup-2024-25.html: Gresdon Town
+ADDED fa-cup-2025-26.html: Southcastle United
+ADDED gamma-league-1971-72.html: St John Meridian
+ADDED gamma-league-1972-73.html: Syrell Regis Rescue
+ADDED gamma-league-1973-74.html: Partizan Warfield
+ADDED gresdon-cup-1972-73.html: Port Bristol Rovers
+ADDED gresdon-cup-1973-74.html: Hereford & Aspley
+ADDED gresdon-cup-1974-75.html: Gresdon Town (p)
+ADDED gresdon-cup-1976-77.html: Gresdon Town
+ADDED gresdon-cup-1977-78.html: Vaughanstown
+ADDED gresdon-cup-1978-79.html: Hereford & Aspley
+ADDED gresdon-cup-1979-80.html: Gresdon Town
+ADDED gresdon-cup-1980-81.html: New Lincoln
+ADDED gresdon-cup-1981-82.html: Port Bristol Rovers
+ADDED gresdon-cup-1982-83.html: Gresdon Town
+ADDED gresdon-cup-1983-84.html: Gresdon Town
+ADDED gresdon-cup-1984-85.html: New Plymouth Mariners
+ADDED gresdon-cup-1985-86.html: Palmerston United
+ADDED gresdon-cup-1986-87.html: Port Bristol Rovers
+ADDED gresdon-cup-1987-88.html: Gresdon Town
+ADDED gresdon-cup-1988-89.html: New Lincoln
+ADDED gresdon-cup-1989-90.html: Gresdon Town
+ADDED gresdon-cup-1990-91.html: Port Bristol Rovers
+ADDED gresdon-cup-1991-92.html: Port Bristol Rovers
+ADDED gresdon-cup-1992-93.html: Gresdon Town
+ADDED gresdon-cup-1993-94.html: Wyvernmouth Dockers
+ADDED gresdon-cup-1994-95.html: Gresdon Town
+ADDED gresdon-cup-1995-96.html: Gresdon Town
+ADDED gresdon-cup-1996-97.html: New Lincoln
+ADDED gresdon-cup-1997-98.html: Port Bristol Rovers
+ADDED gresdon-cup-1998-99.html: Gresdon Town
+ADDED gresdon-cup-1999-00.html: Courteney Villa
+ADDED gresdon-cup-2000-01.html: Gresdon Town
+ADDED gresdon-cup-2002-03.html: New Plymouth Mariners
+ADDED gresdon-cup-2003-04.html: Gresdon Town
+ADDED gresdon-cup-2004-05.html: New Lincoln
+ADDED gresdon-cup-2005-06.html: New Lincoln
+ADDED gresdon-cup-2006-07.html: Vaughanstown
+ADDED gresdon-cup-2007-08.html: New Lincoln
+ADDED gresdon-cup-2008-09.html: New Lincoln
+ADDED gresdon-cup-2009-10.html: Gresdon Town
+ADDED gresdon-cup-2010-11.html: New Lincoln
+ADDED gresdon-cup-2011-12.html: Gresdon Town
+ADDED gresdon-cup-2012-13.html: New Plymouth Mariners
+ADDED gresdon-cup-2013-14.html: Hereford & Aspley
+ADDED gresdon-cup-2014-15.html: Little Padstow
+ADDED gresdon-cup-2015-16.html: Port Bristol Rovers
+ADDED gresdon-cup-2016-17.html: New Lincoln
+ADDED gresdon-cup-2017-18.html: New Lincoln
+ADDED gresdon-cup-2018-19.html: Port Bristol Rovers
+ADDED gresdon-cup-2019-20.html: Gresdon Town
+ADDED gresdon-cup-2020-21.html: Gresdon Town
+ADDED gresdon-cup-2021-22.html: Gresdon Town
+ADDED gresdon-cup-2022-23.html: Gresdon Town
+ADDED gresdon-cup-2023-24.html: New Lincoln
+ADDED gresdon-cup-2024-25.html: New Lincoln (p)
+ADDED gresdon-cup-2025-26.html: Gresdon Town
+ADDED islands-first-division-1974-75.html: Port Orient Battery
+ADDED islands-first-division-1975-76.html: Racing Club
+ADDED islands-first-division-1976-77.html: Gresdon Methodists
+ADDED islands-first-division-1977-78.html: St Vincent All Stars
+ADDED islands-first-division-1978-79.html: Adelaide Wanderers
+ADDED islands-first-division-1979-80.html: Jessopstown Rangers
+ADDED islands-first-division-1980-81.html: Courteney Villa
+ADDED islands-first-division-1981-82.html: Edwalton
+ADDED islands-first-division-1982-83.html: Worthington Rovers
+ADDED islands-first-division-1983-84.html: Port Fowey Royals
+ADDED islands-first-division-1984-85.html: Adelaide Wanderers
+ADDED islands-first-division-1985-86.html: Port Fowey Royals
+ADDED islands-first-division-1986-87.html: Hereford & Aspley
+ADDED islands-first-division-1987-88.html: South Bay Sports
+ADDED islands-first-division-1988-89.html: Durham West End
+ADDED islands-first-division-1989-90.html: Jessopstown Rangers
+ADDED islands-first-division-1990-91.html: Deportivo León
+ADDED islands-first-division-1991-92.html: Jessopstown Rangers
+ADDED islands-first-division-1992-93.html: St Vincent All Stars
+ADDED islands-first-division-1993-94.html: Little Antonito
+ADDED islands-first-division-1994-95.html: Worthington Rovers
+ADDED islands-first-division-1995-96.html: AFC Droy
+ADDED islands-first-division-1996-97.html: Kingsport Bohemians
+ADDED islands-first-division-1997-98.html: Sancti Spiritus
+ADDED islands-first-division-1998-99.html: Hereford & Aspley
+ADDED islands-first-division-1999-00.html: Lansdowne 1981
+ADDED islands-first-division-2000-01.html: Jessopstown Rangers
+ADDED islands-first-division-2001-02.html: St Vincent All Stars
+ADDED islands-first-division-2002-03.html: Port Fowey Royals
+ADDED islands-first-division-2003-04.html: Palmerston United
+ADDED islands-first-division-2004-05.html: Little Padstow
+ADDED islands-first-division-2005-06.html: Whitburn Carew
+ADDED islands-first-division-2006-07.html: Hoxbeth Amateurs
+ADDED islands-first-division-2007-08.html: Deportivo León
+ADDED islands-first-division-2008-09.html: Jessopstown Rangers
+ADDED islands-first-division-2009-10.html: Durham West End
+ADDED islands-first-division-2010-11.html: South Bay Sports
+ADDED islands-first-division-2011-12.html: Santiago de Brados
+ADDED islands-first-division-2012-13.html: Port Fowey Royals
+ADDED islands-first-division-2013-14.html: West Walpool Juniors
+ADDED islands-first-division-2014-15.html: Clifton Albion
+ADDED islands-first-division-2015-16.html: Jessopstown Rangers
+ADDED islands-first-division-2016-17.html: AFC Droy
+ADDED islands-first-division-2017-18.html: Worthington Rovers
+ADDED islands-first-division-2018-19.html: Durham West End
+ADDED islands-first-division-2019-20.html: St Vincent All Stars
+ADDED islands-first-division-2020-21.html: Baptist Railway Athletic
+ADDED islands-first-division-2021-22.html: Edwalton
+ADDED islands-first-division-2022-23.html: Hereford & Aspley
+ADDED islands-first-division-2023-24.html: West Walpool Juniors
+ADDED islands-first-division-2024-25.html: St Vincent All Stars
+ADDED islands-first-division-2025-26.html: Worthington Rovers (C)
+ADDED islands-league-1972-73.html: Carlton Town
+ADDED islands-league-1973-74.html: Clifton Albion
+ADDED islands-league-1974-75.html: Georgetown Atlantic
+ADDED islands-league-1975-76.html: Carmichael Town
+ADDED islands-league-1976-77.html: Lavender Park
+ADDED islands-league-1977-78.html: Deportivo León
+ADDED islands-league-1978-79.html: Hereford & Aspley
+ADDED islands-league-1979-80.html: La Robla
+ADDED islands-league-1980-81.html: Maulover Bay Rowdies
+ADDED islands-league-1981-82.html: Wyvernmouth Dockers
+ADDED islands-league-1982-83.html: Real San Domingo
+ADDED islands-league-1983-84.html: Lavender Park
+ADDED islands-league-1984-85.html: Palmerston United
+ADDED islands-league-1985-86.html: Kirkby Harriers
+ADDED islands-league-1986-87.html: Wyvernmouth Dockers
+ADDED islands-league-1987-88.html: Lavender Park
+ADDED islands-league-1988-89.html: Adelaide Wanderers
+ADDED islands-league-1989-90.html: Port Orient Battery
+ADDED islands-league-1990-91.html: Wyvernmouth Dockers
+ADDED islands-league-1991-92.html: Vaughanstown
+ADDED islands-league-1992-93.html: Port Orient Battery
+ADDED islands-league-1993-94.html: Purditon Town
+ADDED islands-league-1994-95.html: Uffington Edge
+ADDED islands-league-1995-96.html: Stoneleigh Town
+ADDED islands-league-1996-97.html: Purditon Town
+ADDED islands-league-1997-98.html: Kingsport Bohemians
+ADDED islands-league-1998-99.html: Dockside Admirals
+ADDED islands-league-1999-00.html: Kirkby Harriers
+ADDED islands-league-2000-01.html: Clifton Albion
+ADDED islands-league-2001-02.html: Vaughanstown
+ADDED islands-league-2002-03.html: Real San Domingo
+ADDED islands-league-2003-04.html: Serjeant's Bay
+ADDED islands-league-2004-05.html: Lavender Park
+ADDED islands-league-2005-06.html: Kirkby Harriers
+ADDED islands-league-2006-07.html: Uffington Edge
+ADDED islands-league-2007-08.html: Port Bristol Rovers
+ADDED islands-league-2008-09.html: Carlton Town
+ADDED islands-league-2009-10.html: Uffington Edge
+ADDED islands-league-2010-11.html: Port Bristol Rovers
+ADDED islands-league-2011-12.html: Maulover Bay Rowdies
+ADDED islands-league-2012-13.html: Gresdon Methodists
+ADDED islands-league-2013-14.html: Hereford & Aspley
+ADDED islands-league-2014-15.html: Georgetown Atlantic
+ADDED islands-league-2015-16.html: La Robla
+ADDED islands-league-2016-17.html: Vaughanstown
+ADDED islands-league-2017-18.html: Georgetown Atlantic
+ADDED islands-league-2018-19.html: Bricknell Town
+ADDED islands-league-2019-20.html: La Robla
+ADDED islands-league-2020-21.html: AFC Droy
+ADDED islands-league-2021-22.html: New Plymouth Mariners
+ADDED islands-league-2022-23.html: Georgetown Atlantic
+ADDED islands-league-2023-24.html: La Robla
+ADDED islands-league-2024-25.html: Hereford & Aspley
+ADDED islands-league-2025-26.html: AFC Droy (C)
+ADDED mainland-first-division-1974-75.html: Antonito Boilermen
+ADDED mainland-first-division-1975-76.html: Newark Port
+ADDED mainland-first-division-1976-77.html: Courton Lees
+ADDED mainland-first-division-1977-78.html: Westville Wanderers
+ADDED mainland-first-division-1978-79.html: The Maldons
+ADDED mainland-first-division-1979-80.html: Walker Celtic
+ADDED mainland-first-division-1980-81.html: Large Victoria
+ADDED mainland-first-division-1981-82.html: Thorpe St Martin
+ADDED mainland-first-division-1982-83.html: Petherick Ferry
+ADDED mainland-first-division-1983-84.html: St Jude
+ADDED mainland-first-division-1984-85.html: Camptown Athletic
+ADDED mainland-first-division-1985-86.html: Swannbridge Town
+ADDED mainland-first-division-1986-87.html: Draycott Town
+ADDED mainland-first-division-1987-88.html: Brenton Mill Spartans
+ADDED mainland-first-division-1988-89.html: Brath Vale
+ADDED mainland-first-division-1989-90.html: Westville Wanderers
+ADDED mainland-first-division-1990-91.html: Jostinians
+ADDED mainland-first-division-1991-92.html: Birkstall Welfare
+ADDED mainland-first-division-1992-93.html: Hassockstown Ramblers
+ADDED mainland-first-division-1993-94.html: Stoke Town
+ADDED mainland-first-division-1994-95.html: Brizes Apps
+ADDED mainland-first-division-1995-96.html: Jostinians
+ADDED mainland-first-division-1996-97.html: Walker Celtic
+ADDED mainland-first-division-1997-98.html: St Luke's Yonder
+ADDED mainland-first-division-1998-99.html: Rocastle United
+ADDED mainland-first-division-1999-00.html: Clawton-in-Ribbert
+ADDED mainland-first-division-2000-01.html: Petherick Ferry
+ADDED mainland-first-division-2001-02.html: Brighthaven Regent
+ADDED mainland-first-division-2002-03.html: Torpedo Webbstown
+ADDED mainland-first-division-2003-04.html: Beaumaris United
+ADDED mainland-first-division-2004-05.html: The Maldons
+ADDED mainland-first-division-2005-06.html: Swannbridge Town
+ADDED mainland-first-division-2006-07.html: Mannion
+ADDED mainland-first-division-2007-08.html: Boulton Rovers
+ADDED mainland-first-division-2008-09.html: St Jude
+ADDED mainland-first-division-2009-10.html: Hassockstown Ramblers
+ADDED mainland-first-division-2010-11.html: Brath Vale
+ADDED mainland-first-division-2011-12.html: Newark Port
+ADDED mainland-first-division-2012-13.html: Petherick Ferry
+ADDED mainland-first-division-2013-14.html: Lennox Meridian
+ADDED mainland-first-division-2014-15.html: Walker Celtic
+ADDED mainland-first-division-2015-16.html: Westville Wanderers
+ADDED mainland-first-division-2016-17.html: Clevedon Magna
+ADDED mainland-first-division-2017-18.html: Petherick Ferry
+ADDED mainland-first-division-2018-19.html: Hassockstown Ramblers
+ADDED mainland-first-division-2019-20.html: The Maldons
+ADDED mainland-first-division-2020-21.html: Clevedon Magna
+ADDED mainland-first-division-2021-22.html: Brath Vale
+ADDED mainland-first-division-2022-23.html: Heckingborough
+ADDED mainland-first-division-2023-24.html: Hassockstown Ramblers
+ADDED mainland-first-division-2024-25.html: Brenton Mill Spartans
+ADDED mainland-first-division-2025-26.html: Boulton Rovers (C)
+ADDED mainland-league-1972-73.html: Partizan Warfield
+ADDED mainland-league-1973-74.html: Walker Celtic
+ADDED mainland-league-1974-75.html: Partizan Warfield
+ADDED mainland-league-1975-76.html: Syrell Regis Rescue
+ADDED mainland-league-1976-77.html: Windaybank Thistle
+ADDED mainland-league-1977-78.html: Sunnymede Rangers
+ADDED mainland-league-1978-79.html: Rocastle United
+ADDED mainland-league-1979-80.html: Beaumaris United
+ADDED mainland-league-1980-81.html: Lambeth
+ADDED mainland-league-1981-82.html: Mannion
+ADDED mainland-league-1982-83.html: Antonito Boilermen
+ADDED mainland-league-1983-84.html: Queenstown Riot
+ADDED mainland-league-1984-85.html: Brunigton Town
+ADDED mainland-league-1985-86.html: Beaumaris United
+ADDED mainland-league-1986-87.html: Walker Celtic
+ADDED mainland-league-1987-88.html: Redmond Town
+ADDED mainland-league-1988-89.html: Courton Lees
+ADDED mainland-league-1989-90.html: Brenton Mill Spartans
+ADDED mainland-league-1990-91.html: Brunigton Town
+ADDED mainland-league-1991-92.html: Beaumaris United
+ADDED mainland-league-1992-93.html: Lambeth
+ADDED mainland-league-1993-94.html: St John Meridian
+ADDED mainland-league-1994-95.html: Large United
+ADDED mainland-league-1995-96.html: Newark Port
+ADDED mainland-league-1996-97.html: Windaybank Thistle
+ADDED mainland-league-1997-98.html: Brenton Mill Spartans
+ADDED mainland-league-1998-99.html: Beaumaris United
+ADDED mainland-league-1999-00.html: Windaybank Thistle
+ADDED mainland-league-2000-01.html: Camptown Athletic
+ADDED mainland-league-2001-02.html: Windaybank Thistle
+ADDED mainland-league-2002-03.html: Redmond Town
+ADDED mainland-league-2003-04.html: Chapeltown Academical
+ADDED mainland-league-2004-05.html: Petherick Ferry
+ADDED mainland-league-2005-06.html: St John Meridian
+ADDED mainland-league-2006-07.html: Windaybank Thistle
+ADDED mainland-league-2007-08.html: Princes Yeomouth
+ADDED mainland-league-2008-09.html: Mannion
+ADDED mainland-league-2009-10.html: St John Meridian
+ADDED mainland-league-2010-11.html: Syrell Regis Rescue
+ADDED mainland-league-2011-12.html: Chapeltown Academical
+ADDED mainland-league-2012-13.html: Syrell Regis Rescue
+ADDED mainland-league-2013-14.html: Beaumaris United
+ADDED mainland-league-2014-15.html: St Luke's Yonder
+ADDED mainland-league-2015-16.html: Queenstown Riot
+ADDED mainland-league-2016-17.html: Brizes Apps
+ADDED mainland-league-2017-18.html: Courton Lees
+ADDED mainland-league-2018-19.html: Redmond Town
+ADDED mainland-league-2019-20.html: Hassockstown Ramblers
+ADDED mainland-league-2020-21.html: Newark Port
+ADDED mainland-league-2021-22.html: Windaybank Thistle
+ADDED mainland-league-2022-23.html: Courton Lees
+ADDED mainland-league-2023-24.html: St Luke's Yonder
+ADDED mainland-league-2024-25.html: Redmond Town
+ADDED mainland-league-2025-26.html: Hassockstown Ramblers (C)
+ADDED warfield-cup-1972-73.html: Warfield Industrial
+ADDED warfield-cup-1973-74.html: Mannion
+ADDED warfield-cup-1974-75.html: Brizes Apps
+ADDED warfield-cup-1975-76.html: Queenstown Riot
+ADDED warfield-cup-1976-77.html: Brizes Apps
+ADDED warfield-cup-1977-78.html: Partizan Warfield
+ADDED warfield-cup-1978-79.html: Queenstown Riot
+ADDED warfield-cup-1979-80.html: Queenstown Riot
+ADDED warfield-cup-1980-81.html: Partizan Warfield
+ADDED warfield-cup-1981-82.html: Partizan Warfield
+ADDED warfield-cup-1982-83.html: Partizan Warfield
+ADDED warfield-cup-1983-84.html: Partizan Warfield
+ADDED warfield-cup-1984-85.html: Partizan Warfield (p)
+ADDED warfield-cup-1985-86.html: Partizan Warfield
+ADDED warfield-cup-1986-87.html: Partizan Warfield
+ADDED warfield-cup-1987-88.html: Queenstown Riot
+ADDED warfield-cup-1988-89.html: Warfield Industrial
+ADDED warfield-cup-1989-90.html: Partizan Warfield
+ADDED warfield-cup-1990-91.html: Queenstown Riot
+ADDED warfield-cup-1991-92.html: Partizan Warfield
+ADDED warfield-cup-1992-93.html: Partizan Warfield
+ADDED warfield-cup-1993-94.html: Large United
+ADDED warfield-cup-1994-95.html: Antonito Boilermen
+ADDED warfield-cup-1995-96.html: Partizan Warfield
+ADDED warfield-cup-1996-97.html: Partizan Warfield
+ADDED warfield-cup-1997-98.html: Partizan Warfield
+ADDED warfield-cup-1998-99.html: Partizan Warfield
+ADDED warfield-cup-1999-00.html: Partizan Warfield
+ADDED warfield-cup-2000-01.html: Partizan Warfield
+ADDED warfield-cup-2001-02.html: Partizan Warfield
+ADDED warfield-cup-2002-03.html: Large United
+ADDED warfield-cup-2003-04.html: Warfield Industrial
+ADDED warfield-cup-2004-05.html: Large United
+ADDED warfield-cup-2005-06.html: Partizan Warfield
+ADDED warfield-cup-2006-07.html: Warfield Industrial
+ADDED warfield-cup-2007-08.html: Antonito Boilermen
+ADDED warfield-cup-2008-09.html: Princes Yeomouth
+ADDED warfield-cup-2009-10.html: Mannion (p)
+ADDED warfield-cup-2010-11.html: Partizan Warfield
+ADDED warfield-cup-2011-12.html: Warfield Industrial
+ADDED warfield-cup-2012-13.html: Queenstown Riot
+ADDED warfield-cup-2013-14.html: Warfield Industrial
+ADDED warfield-cup-2014-15.html: Partizan Warfield
+ADDED warfield-cup-2015-16.html: Antonito Boilermen
+ADDED warfield-cup-2016-17.html: Partizan Warfield
+ADDED warfield-cup-2017-18.html: Warfield Industrial
+ADDED warfield-cup-2018-19.html: Partizan Warfield
+ADDED warfield-cup-2019-20.html: Partizan Warfield
+ADDED warfield-cup-2020-21.html: Brizes Apps
+ADDED warfield-cup-2021-22.html: Large United
+ADDED warfield-cup-2022-23.html: Partizan Warfield
+ADDED warfield-cup-2023-24.html: Partizan Warfield
+ADDED warfield-cup-2024-25.html: Warfield Industrial
+ADDED warfield-cup-2025-26.html: Warfield Industrial
+
+SKIP brados-cup-1958-59.html: winner not unambiguous
+SKIP brados-cup-1959-60.html: winner not unambiguous
+SKIP brados-cup-1960-61.html: winner not unambiguous
+SKIP brados-cup-1961-62.html: winner not unambiguous
+SKIP brados-cup-1962-63.html: winner not unambiguous
+SKIP brados-cup-1963-64.html: winner not unambiguous
+SKIP brados-cup-1964-65.html: winner not unambiguous
+SKIP brados-cup-1965-66.html: winner not unambiguous
+SKIP brados-cup-1966-67.html: winner not unambiguous
+SKIP brados-cup-1967-68.html: winner not unambiguous
+SKIP brados-cup-1968-69.html: winner not unambiguous
+SKIP brados-cup-1969-70.html: winner not unambiguous
+SKIP brados-cup-1970-71.html: winner not unambiguous
+SKIP brados-cup-1971-72.html: winner not unambiguous
+SKIP denton-cup-1956-57.html: winner not unambiguous
+SKIP denton-cup-1958-59.html: winner not unambiguous
+SKIP denton-cup-1960-61.html: winner not unambiguous
+SKIP denton-cup-1962-63.html: winner not unambiguous
+SKIP denton-cup-1963-64.html: winner not unambiguous
+SKIP denton-cup-1964-65.html: winner not unambiguous
+SKIP denton-cup-1965-66.html: winner not unambiguous
+SKIP denton-cup-1966-67.html: winner not unambiguous
+SKIP denton-cup-1967-68.html: winner not unambiguous
+SKIP denton-cup-1968-69.html: winner not unambiguous
+SKIP denton-cup-1969-70.html: winner not unambiguous
+SKIP denton-cup-1970-71.html: winner not unambiguous
+SKIP denton-cup-1971-72.html: winner not unambiguous
+SKIP denton-cup-1994-95.html: winner not unambiguous
+SKIP denton-cup-1996-97.html: winner not unambiguous
+SKIP errol-bacchus-shield-1984-85.html: winner not unambiguous
+SKIP errol-bacchus-shield-1992-93.html: winner not unambiguous
+SKIP errol-bacchus-shield-2022-23.html: winner not unambiguous
+SKIP errol-bacchus-shield-2023-24.html: winner not unambiguous
+SKIP errol-bacchus-shield-2025-26.html: winner not unambiguous
+SKIP european-cup-1970-71.html: winner not unambiguous
+SKIP european-cup-1971-72.html: winner not unambiguous
+SKIP european-cup-winners-cup-1970-71.html: winner not unambiguous
+SKIP european-cup-winners-cup-1971-72.html: winner not unambiguous
+SKIP governors-cup-1958-59.html: winner not unambiguous
+SKIP governors-cup-1959-60.html: winner not unambiguous
+SKIP governors-cup-1960-61.html: winner not unambiguous
+SKIP governors-cup-1961-62.html: winner not unambiguous
+SKIP governors-cup-1962-63.html: winner not unambiguous
+SKIP governors-cup-1963-64.html: winner not unambiguous
+SKIP governors-cup-1964-65.html: winner not unambiguous
+SKIP governors-cup-1965-66.html: winner not unambiguous
+SKIP governors-cup-1966-67.html: winner not unambiguous
+SKIP governors-cup-1967-68.html: winner not unambiguous
+SKIP governors-cup-1968-69.html: winner not unambiguous
+SKIP governors-cup-1969-70.html: winner not unambiguous
+SKIP gresdon-cup-1962-63.html: winner not unambiguous
+SKIP gresdon-cup-1963-64.html: winner not unambiguous
+SKIP gresdon-cup-1964-65.html: winner not unambiguous
+SKIP gresdon-cup-1965-66.html: winner not unambiguous
+SKIP gresdon-cup-1966-67.html: winner not unambiguous
+SKIP gresdon-cup-1967-68.html: winner not unambiguous
+SKIP gresdon-cup-1968-69.html: winner not unambiguous
+SKIP gresdon-cup-1969-70.html: winner not unambiguous
+SKIP gresdon-cup-1970-71.html: winner not unambiguous
+SKIP gresdon-cup-1971-72.html: winner not unambiguous
+SKIP gresdon-cup-1975-76.html: winner not unambiguous
+SKIP gresdon-cup-2001-02.html: winner not unambiguous
+SKIP inter-cities-fairs-cup-1970-71.html: winner not unambiguous
+SKIP uefa-champions-league-1992-93.html: winner not unambiguous
+SKIP uefa-champions-league-1993-94.html: winner not unambiguous
+SKIP uefa-champions-league-1994-95.html: winner not unambiguous
+SKIP uefa-champions-league-1995-96.html: winner not unambiguous
+SKIP uefa-champions-league-1996-97.html: winner not unambiguous
+SKIP uefa-champions-league-1997-98.html: winner not unambiguous
+SKIP uefa-champions-league-1998-99.html: winner not unambiguous
+SKIP uefa-champions-league-1999-00.html: winner not unambiguous
+SKIP uefa-champions-league-2000-01.html: winner not unambiguous
+SKIP uefa-champions-league-2001-02.html: winner not unambiguous
+SKIP uefa-champions-league-2002-03.html: winner not unambiguous
+SKIP uefa-champions-league-2003-04.html: winner not unambiguous
+SKIP uefa-champions-league-2004-05.html: winner not unambiguous
+SKIP uefa-champions-league-2005-06.html: winner not unambiguous
+SKIP uefa-champions-league-2006-07.html: winner not unambiguous
+SKIP uefa-champions-league-2007-08.html: winner not unambiguous
+SKIP uefa-champions-league-2008-09.html: winner not unambiguous
+SKIP uefa-champions-league-2009-10.html: winner not unambiguous
+SKIP uefa-champions-league-2010-11.html: winner not unambiguous
+SKIP uefa-champions-league-2011-12.html: winner not unambiguous
+SKIP uefa-champions-league-2012-13.html: winner not unambiguous
+SKIP uefa-champions-league-2013-14.html: winner not unambiguous
+SKIP uefa-champions-league-2014-15.html: winner not unambiguous
+SKIP uefa-champions-league-2015-16.html: winner not unambiguous
+SKIP uefa-champions-league-2016-17.html: winner not unambiguous
+SKIP uefa-champions-league-2017-18.html: winner not unambiguous
+SKIP uefa-champions-league-2018-19.html: winner not unambiguous
+SKIP uefa-champions-league-2019-20.html: winner not unambiguous
+SKIP uefa-champions-league-2020-21.html: winner not unambiguous
+SKIP uefa-champions-league-2021-22.html: winner not unambiguous
+SKIP uefa-champions-league-2022-23.html: winner not unambiguous
+SKIP uefa-champions-league-2023-24.html: winner not unambiguous
+SKIP uefa-champions-league-2024-25.html: winner not unambiguous
+SKIP uefa-cup-1971-72.html: winner not unambiguous
+SKIP uefa-europa-conference-league-2021-22.html: winner not unambiguous
+SKIP uefa-europa-conference-league-2022-23.html: winner not unambiguous
+SKIP uefa-europa-conference-league-2023-24.html: winner not unambiguous
+SKIP uefa-europa-conference-league-2024-25.html: winner not unambiguous
+SKIP uefa-europa-league-2009-10.html: winner not unambiguous
+SKIP uefa-europa-league-2010-11.html: winner not unambiguous
+SKIP uefa-europa-league-2011-12.html: winner not unambiguous
+SKIP uefa-europa-league-2012-13.html: winner not unambiguous
+SKIP uefa-europa-league-2013-14.html: winner not unambiguous
+SKIP uefa-europa-league-2014-15.html: winner not unambiguous
+SKIP uefa-europa-league-2015-16.html: winner not unambiguous
+SKIP uefa-europa-league-2016-17.html: winner not unambiguous
+SKIP uefa-europa-league-2017-18.html: winner not unambiguous
+SKIP uefa-europa-league-2018-19.html: winner not unambiguous
+SKIP uefa-europa-league-2019-20.html: winner not unambiguous
+SKIP uefa-europa-league-2020-21.html: winner not unambiguous
+SKIP uefa-europa-league-2021-22.html: winner not unambiguous
+SKIP uefa-europa-league-2022-23.html: winner not unambiguous
+SKIP uefa-europa-league-2023-24.html: winner not unambiguous
+SKIP uefa-europa-league-2024-25.html: winner not unambiguous
+SKIP warfield-cup-1959-60.html: winner not unambiguous
+SKIP warfield-cup-1960-61.html: winner not unambiguous
+SKIP warfield-cup-1961-62.html: winner not unambiguous
+SKIP warfield-cup-1962-63.html: winner not unambiguous
+SKIP warfield-cup-1963-64.html: winner not unambiguous
+SKIP warfield-cup-1964-65.html: winner not unambiguous
+SKIP warfield-cup-1965-66.html: winner not unambiguous
+SKIP warfield-cup-1966-67.html: winner not unambiguous
+SKIP warfield-cup-1967-68.html: winner not unambiguous
+SKIP warfield-cup-1968-69.html: winner not unambiguous
+SKIP warfield-cup-1969-70.html: winner not unambiguous
+SKIP warfield-cup-1970-71.html: winner not unambiguous
+SKIP warfield-cup-1971-72.html: winner not unambiguous
