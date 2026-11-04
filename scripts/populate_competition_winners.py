@@ -30,7 +30,7 @@ def winner_from_bracket(page):
     candidates = []
     for card in cards:
         box = re.search(r'<rect class="tie-box"[^>]*\bx="([\d.]+)"', card)
-        win = re.search(r'<a href="([^"]+)"><text class="team winner"[^>]*>([^<]+)</text></a>', card)
+        win = re.search(r'<a href="([^"]+)"><text class="[^"]*\\bteam\\b[^"]*\\bwinner\\b[^"]*"[^>]*>([^<]+)</text></a>', card)
         if box and win:
             candidates.append((float(box.group(1)), re.sub(r"\\s*\\(p\\)\\s*$", "", html.unescape(win.group(2)), flags=re.I), win.group(1)))
     if not candidates:
