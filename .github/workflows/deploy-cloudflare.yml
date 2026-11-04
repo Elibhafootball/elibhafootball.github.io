@@ -9,6 +9,7 @@ on:
     workflows:
       - Populate competition winners panels
       - Rebuild early Masherat Cup tables
+      - Normalize cup bracket display scale
     types:
       - completed
 
