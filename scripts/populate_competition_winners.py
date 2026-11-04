@@ -11,6 +11,7 @@ LEAGUES = ("alpha-league", "beta-league", "gamma-league",
            "mainland-league", "islands-league",
            "mainland-first-division", "islands-first-division")
 # Knockout formats are recognised by their actual final bracket, not by name.
+EARLY_MASHERAT_CUPS = ("brados-cup", "denton-cup", "gresdon-cup", "warfield-cup")
 SKIP = {"competition-winner-panel"}
 
 def winner_from_league(page):
@@ -79,7 +80,8 @@ for path in sorted(DIR.glob("*.html")):
     if "competition-winner-panel" in page:
         continue
     slug = re.sub(r"-\d{4}-\d{2}\.html$", "", path.name)
-    is_league = slug in LEAGUES
+    is_masherat = slug in EARLY_MASHERAT_CUPS and int(path.name[-12:-8]) <= 1971
+    is_league = slug in LEAGUES or is_masherat
     result = winner_from_league(page) if is_league else winner_from_bracket(page)
     if not result and not is_league:
         result = winner_from_single_final(page)
@@ -87,7 +89,7 @@ for path in sorted(DIR.glob("*.html")):
         skipped.append((path.name, "winner not unambiguous"))
         continue
     name, href = result
-    label = "LEAGUE CHAMPIONS" if is_league else ("FA CUP WINNERS" if slug == "fa-cup" else "CUP WINNERS")
+    label = "CHAMPIONS" if is_masherat else ("LEAGUE CHAMPIONS" if is_league else ("FA CUP WINNERS" if slug == "fa-cup" else "CUP WINNERS"))
     panel = make_panel(name, href, label)
     if not panel:
         skipped.append((path.name, "invalid club link"))
