@@ -58,9 +58,9 @@ for cup in CUPS:
                 x[4] += ga; x[5] += gb
                 y[4] += gb; y[5] += ga
                 if ga > gb:
-                    x[1] += 1; y[3] += 1; x[6] += 2
+                    x[1] += 1; y[3] += 1; x[6] += 3
                 elif ga < gb:
-                    y[1] += 1; x[3] += 1; y[6] += 2
+                    y[1] += 1; x[3] += 1; y[6] += 3
                 else:
                     x[2] += 1; y[2] += 1; x[6] += 1; y[6] += 1
             # All teams must have completed an equal home-and-away league.
