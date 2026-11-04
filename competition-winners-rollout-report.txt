@@ -1,12 +1,13 @@
-Added: 0
-Skipped: 80
+Added: 5
+Skipped: 75
 
+ADDED denton-cup-1994-95.html: Brenton Mill Spartans (p)
+ADDED denton-cup-1996-97.html: North Denton United (p)
+ADDED errol-bacchus-shield-1992-93.html: North Denton United (p)
+ADDED gresdon-cup-1975-76.html: New Plymouth Mariners (p)
+ADDED gresdon-cup-2001-02.html: Port Bristol Rovers (p)
 
-
-SKIP denton-cup-1994-95.html: winner not unambiguous
-SKIP denton-cup-1996-97.html: winner not unambiguous
 SKIP errol-bacchus-shield-1984-85.html: winner not unambiguous
-SKIP errol-bacchus-shield-1992-93.html: winner not unambiguous
 SKIP errol-bacchus-shield-2022-23.html: winner not unambiguous
 SKIP errol-bacchus-shield-2023-24.html: winner not unambiguous
 SKIP errol-bacchus-shield-2025-26.html: winner not unambiguous
@@ -26,8 +27,6 @@ SKIP governors-cup-1966-67.html: winner not unambiguous
 SKIP governors-cup-1967-68.html: winner not unambiguous
 SKIP governors-cup-1968-69.html: winner not unambiguous
 SKIP governors-cup-1969-70.html: winner not unambiguous
-SKIP gresdon-cup-1975-76.html: winner not unambiguous
-SKIP gresdon-cup-2001-02.html: winner not unambiguous
 SKIP inter-cities-fairs-cup-1970-71.html: winner not unambiguous
 SKIP uefa-champions-league-1992-93.html: winner not unambiguous
 SKIP uefa-champions-league-1993-94.html: winner not unambiguous
