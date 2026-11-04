@@ -1,11 +1,35 @@
-Added: 5
+Added: 29
 Skipped: 75
 
-ADDED denton-cup-1994-95.html: Brenton Mill Spartans (p)
-ADDED denton-cup-1996-97.html: North Denton United (p)
-ADDED errol-bacchus-shield-1992-93.html: North Denton United (p)
-ADDED gresdon-cup-1975-76.html: New Plymouth Mariners (p)
-ADDED gresdon-cup-2001-02.html: Port Bristol Rovers (p)
+ADDED brados-cup-1974-75.html: cleaned existing penalty winner label
+ADDED brados-cup-2004-05.html: cleaned existing penalty winner label
+ADDED brados-cup-2014-15.html: cleaned existing penalty winner label
+ADDED brados-cup-2025-26.html: cleaned existing penalty winner label
+ADDED denton-cup-1975-76.html: cleaned existing penalty winner label
+ADDED denton-cup-1983-84.html: cleaned existing penalty winner label
+ADDED denton-cup-1984-85.html: cleaned existing penalty winner label
+ADDED denton-cup-1989-90.html: cleaned existing penalty winner label
+ADDED denton-cup-1994-95.html: cleaned existing penalty winner label
+ADDED denton-cup-2025-26.html: cleaned existing penalty winner label
+ADDED errol-bacchus-shield-1986-87.html: cleaned existing penalty winner label
+ADDED errol-bacchus-shield-1989-90.html: cleaned existing penalty winner label
+ADDED errol-bacchus-shield-1990-91.html: cleaned existing penalty winner label
+ADDED errol-bacchus-shield-1992-93.html: cleaned existing penalty winner label
+ADDED errol-bacchus-shield-1996-97.html: cleaned existing penalty winner label
+ADDED errol-bacchus-shield-2008-09.html: cleaned existing penalty winner label
+ADDED errol-bacchus-shield-2019-20.html: cleaned existing penalty winner label
+ADDED fa-cup-1983-84.html: cleaned existing penalty winner label
+ADDED fa-cup-1998-99.html: cleaned existing penalty winner label
+ADDED fa-cup-2001-02.html: cleaned existing penalty winner label
+ADDED fa-cup-2005-06.html: cleaned existing penalty winner label
+ADDED fa-cup-2006-07.html: cleaned existing penalty winner label
+ADDED fa-cup-2021-22.html: cleaned existing penalty winner label
+ADDED gresdon-cup-1974-75.html: cleaned existing penalty winner label
+ADDED gresdon-cup-1975-76.html: cleaned existing penalty winner label
+ADDED gresdon-cup-2001-02.html: cleaned existing penalty winner label
+ADDED gresdon-cup-2024-25.html: cleaned existing penalty winner label
+ADDED warfield-cup-1984-85.html: cleaned existing penalty winner label
+ADDED warfield-cup-2009-10.html: cleaned existing penalty winner label
 
 SKIP errol-bacchus-shield-1984-85.html: winner not unambiguous
 SKIP errol-bacchus-shield-2022-23.html: winner not unambiguous
