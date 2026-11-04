@@ -78,6 +78,14 @@ for path in sorted(DIR.glob("*.html")):
         continue
     page = path.read_text(encoding="utf-8")
     if "competition-winner-panel" in page:
+        # Repair already-published panels, not only newly generated ones.
+        panel_match = re.search(r'<section class="competition-winner-panel">.*?</section>', page, re.S)
+        if panel_match:
+            cleaned = re.sub(r'\s*\(p\)(?=(?:</a>| crest"))', '', panel_match.group(0), flags=re.I)
+            if cleaned != panel_match.group(0):
+                page = page[:panel_match.start()] + cleaned + page[panel_match.end():]
+                path.write_text(page, encoding="utf-8")
+                changed.append((path.name, "cleaned existing penalty winner label"))
         continue
     slug = re.sub(r"-\d{4}-\d{2}\.html$", "", path.name)
     is_masherat = slug in EARLY_MASHERAT_CUPS and int(path.name[-12:-8]) <= 1971
