@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const main = document.querySelector("main");
   const heading = main?.querySelector("h1");
-  if (!heading) return;
+  if (!heading || main.querySelector(".competition-winner-panel")) return;
 
   let winnerLink = null;
 
