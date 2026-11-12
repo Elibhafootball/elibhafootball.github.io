@@ -29,3 +29,5 @@ for page in sorted(COMP.glob('*.html')):
     changed+=1
 print(f'Added league position chart to {changed} season pages; skipped {len(skipped)} without suitable data')
 for name in skipped: print('SKIPPED:',name)
+
+# This script is safe to rerun; existing chart inclusions are preserved.
