@@ -3,7 +3,7 @@ const colors={"Adelaide Wanderers":"#c92c32","AFC Droy":"#33383f","Antonito Boil
 const root=document.querySelector('main');if(!root)return;
 const blocks=[...root.querySelectorAll('.round-block')];const rounds=blocks.map(b=>{const rows=[...b.querySelectorAll('.live-table tbody tr')];return rows.map((row,i)=>{const a=row.querySelector('.live-team a');return a?{name:a.textContent.trim(),href:a.getAttribute('href'),pos:parseInt(row.cells[0]?.textContent,10),played:parseInt(row.cells[1]?.textContent,10),pts:row.querySelector('.live-pts')?.textContent.trim()}:null}).filter(Boolean)}).filter(x=>x.length>0);
 if(rounds.length<2)return;
-const final=rounds[matchCount-1];const n=final.length;
+const final=rounds[rounds.length-1];const n=final.length;
 const teams=final.map(r=>{const byGame=new Map();for(const round of rounds){const row=round.find(x=>x.name===r.name);if(row&&Number.isInteger(row.played)&&row.played>0&&!byGame.has(row.played))byGame.set(row.played,row)}
 const maxPlayed=Math.max(...final.map(x=>x.played||0));const positions=Array.from({length:maxPlayed},(_,i)=>byGame.get(i+1)?.pos??null);
 const points=Array.from({length:maxPlayed},(_,i)=>byGame.get(i+1)?.pts??'');
