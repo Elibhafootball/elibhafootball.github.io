@@ -1,0 +1,30 @@
+(()=>{'use strict';
+const colors={
+'Hardwick Rovers':['#c62828'],'FC Brados':['#741d38'],'East Camberwell United':['#d32f2f','#f5f5f5'],'North Denton United':['#59b6e8','#f5f5f5'],'Dynamo Denton':['#1565c0'],'Partizan Warfield':['#202020'],'Walpool Seagulls':['#1976d2'],'Gresdon Town':['#e97818'],'Georgetown Atlantic':['#142e57'],'Dockside Admirals':['#181818','#e6ba29'],'Southcastle United':['#151515','#f4f4f4'],'Lambeth':['#d32f2f'],'Stoneleigh Town':['#f0f0f0'],'La Robla':['#c62828','#f5f5f5'],'Queenstown Riot':['#1565c0'],'Large United':['#c62828'],'Frotes Juniors':['#f4f4f4'],'Whatton 004':['#171717','#1976d2']};
+const root=document.querySelector('main');if(!root)return;
+const blocks=[...root.querySelectorAll('.round-block')];const rounds=blocks.map(b=>{const rows=[...b.querySelectorAll('.live-table tbody tr')];return rows.map((row,i)=>{const a=row.querySelector('.live-team a');return a?{name:a.textContent.trim(),href:a.getAttribute('href'),pos:parseInt(row.cells[0]?.textContent,10),pts:row.querySelector('.live-pts')?.textContent.trim()}:null}).filter(Boolean)}).filter(x=>x.length>0);
+if(rounds.length<2)return;
+const final=rounds[rounds.length-1];const n=final.length;const teams=final.map((r,i)=>({name:r.name,href:r.href,crest:'../clubs/crests/'+r.href.split('/').pop().replace('.html','.png'),colors:colors[r.name]||['#607d8b'],positions:rounds.map(round=>round.find(x=>x.name===r.name)?.pos??null),points:rounds.map(round=>round.find(x=>x.name===r.name)?.pts??'')}));
+const section=document.createElement('section');section.className='position-chart-section';section.innerHTML='<h2>League position by matchday</h2><p class="position-chart-help">Hover over or select a club name or crest to follow its season. Click again to show all clubs.</p><div class="position-chart-scroll"><div class="position-chart-inner"><svg class="position-chart-svg" role="img" aria-label="League positions after each matchday"></svg><div class="position-chart-tooltip" hidden></div></div></div>';
+const anchor=root.querySelector('.round-block');if(anchor)anchor.before(section);else root.append(section);
+const svg=section.querySelector('svg'),tip=section.querySelector('.position-chart-tooltip');const NS='http://www.w3.org/2000/svg';const W=1100,H=Math.max(620,n*34+55),left=43,right=735,top=26,bottom=H-34,lab=right+23;svg.setAttribute('viewBox',`0 0 ${W} ${H}`);svg.style.height=H+'px';
+const el=(tag,attrs,parent=svg)=>{const e=document.createElementNS(NS,tag);for(const [k,v]of Object.entries(attrs))e.setAttribute(k,String(v));parent.append(e);return e};
+const X=i=>left+i*(right-left)/(rounds.length-1),Y=p=>top+(p-1)*(bottom-top)/(n-1);
+for(let p=1;p<=n;p++){el('line',{x1:left,x2:right,y1:Y(p),y2:Y(p),stroke:'#8b96a4','stroke-opacity':'.19'});const t=el('text',{x:left-12,y:Y(p)+4,'text-anchor':'end',fill:'#7a8491','font-size':12});t.textContent=p}
+for(let i=0;i<rounds.length;i++){if(i%Math.max(1,Math.ceil(rounds.length/12))!==0&&i!==rounds.length-1)continue;const t=el('text',{x:X(i),y:H-8,'text-anchor':'middle',fill:'#7a8491','font-size':12});t.textContent=i+1}
+let selected=null,hovered=null;const groups=[];
+teams.forEach((team,index)=>{const group=el('g',{'data-team':team.name});const points=team.positions.map((p,i)=>p==null?null:[X(i),Y(p)]).filter(Boolean);const d=points.map((p,i)=>(i?'L':'M')+p.join(',')).join(' ');const line=el('path',{d,fill:'none',stroke:team.colors[0],'stroke-width':2.2,'stroke-linejoin':'round','stroke-linecap':'round'},group);
+let secondary=null;if(team.colors[1])secondary=el('path',{d,fill:'none',stroke:team.colors[1],'stroke-width':2.2,'stroke-dasharray':'7 7','stroke-linejoin':'round','stroke-linecap':'round'},group);
+const hit=el('path',{d,fill:'none',stroke:'transparent','stroke-width':13,style:'cursor:pointer'},group);
+const finalY=Y(index+1);const connector=el('line',{x1:right,x2:lab-7,y1:finalY,y2:finalY,stroke:team.colors[0],'stroke-width':2},group);
+const label=el('g',{role:'button',tabindex:0,'aria-label':'Highlight '+team.name,style:'cursor:pointer'},group);
+el('rect',{x:lab-5,y:finalY-15,width:W-lab+5,height:30,fill:'transparent'},label);
+const crest=el('image',{x:lab,y:finalY-11,width:22,height:22,href:team.crest},label);
+const name=el('text',{x:lab+30,y:finalY+5,'font-size':14,fill:'currentColor'},label);name.textContent=team.name;
+const select=()=>{selected=selected===team.name?null:team.name;render()};label.addEventListener('click',select);hit.addEventListener('click',select);label.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select()}});[label,hit].forEach(node=>{node.addEventListener('mouseenter',()=>{hovered=team.name;render()});node.addEventListener('mouseleave',()=>{hovered=null;render()})});
+hit.addEventListener('mousemove',e=>{const rect=svg.getBoundingClientRect();const px=(e.clientX-rect.left)*W/rect.width;const idx=Math.max(0,Math.min(rounds.length-1,Math.round((px-left)/(right-left)*(rounds.length-1))));tip.hidden=false;tip.textContent=team.name+' · Matchday '+(idx+1)+' · '+team.positions[idx]+ordinal(team.positions[idx])+' · '+team.points[idx]+' pts';tip.style.left=Math.min(65,Math.max(0,(e.clientX-rect.left)/rect.width*100))+'%';tip.style.top='3px'});hit.addEventListener('mouseleave',()=>tip.hidden=true);
+groups.push({team,group,line,secondary,connector,label,name})});
+function ordinal(n){return n%100>=11&&n%100<=13?'th':n%10===1?'st':n%10===2?'nd':n%10===3?'rd':'th'}
+function render(){const active=hovered||selected;for(const g of groups){const on=g.team.name===active;const faded=active&&!on;g.line.style.opacity=faded?'.11':active?'1':'.36';if(g.secondary)g.secondary.style.opacity=faded?'.11':active?'1':'.55';g.line.setAttribute('stroke-width',on?4:2.2);if(g.secondary)g.secondary.setAttribute('stroke-width',on?4:2.2);g.connector.style.opacity=faded?'.2':'1';g.name.style.opacity=faded?'.48':'1';g.name.style.fontWeight=on?'700':'400';g.group.parentNode.append(g.group)}}
+render();
+})();
