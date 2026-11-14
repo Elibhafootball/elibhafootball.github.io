@@ -23,3 +23,5 @@ for page in sorted(root.glob('*.html')):
         fixed_pages+=1
         fixed_rows+=n
 print(f'Repaired {fixed_rows} club rows on {fixed_pages} league-season pages')
+
+# Safe to rerun after the first repair.
