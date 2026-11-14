@@ -41,3 +41,5 @@ for page in sorted(root.glob('*.html')):
         pages+=1
 print(f'Updated {pages} season pages with {crests} crests')
 for item in skipped:print('SKIPPED:',item)
+
+# Re-runnable; only league-season final tables are modified.
