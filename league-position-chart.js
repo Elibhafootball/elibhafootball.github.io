@@ -45,7 +45,7 @@ const select=()=>{selected=selected===team.name?null:team.name;render()};label.a
 hit.addEventListener('mousemove',e=>{const rect=svg.getBoundingClientRect();const px=(e.clientX-rect.left)*W/rect.width;const idx=Math.max(0,Math.min(matchCount-1,Math.round((px-left)/(right-left)*(matchCount-1))));const position=team.positions[idx];
 if(position==null){tip.hidden=true;return}
 tip.hidden=false;
-tip.textContent=(team.results[idx]||team.name+' · Game '+(idx+1))+', '+position+ordinal(position)+', '+team.points[idx]+'pts';
+tip.textContent=(team.results[idx]||team.name+' · Game '+(idx+1))+' · '+position+ordinal(position)+' · '+team.points[idx]+'pts';
 const inner=section.querySelector('.position-chart-inner');
 const innerRect=inner.getBoundingClientRect();
 const scaleX=rect.width/W,scaleY=rect.height/H;
