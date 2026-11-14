@@ -1,0 +1,29 @@
+name: Install league table crests
+on:
+  push:
+    paths:
+      - scripts/install_league_table_crests.py
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Add compact crests to final tables
+        run: python scripts/install_league_table_crests.py
+      - name: Commit league pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add competitions/
+          if ! git diff --cached --quiet; then
+            git commit -m "Add compact crests to all league season tables"
+            git push
+          fi
