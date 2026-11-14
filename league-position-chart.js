@@ -10,8 +10,8 @@ for(const block of blocks){
     const cells=tr.querySelectorAll('td');
     if(cells.length<3)continue;
     const home=cells[0].textContent.trim(),score=cells[1].textContent.trim(),away=cells[2].textContent.trim();
-    if(!/^\\d+\\s*[–—-]\\s*\\d+$/.test(score))continue;
-    const result=home+' '+score.replace(/\\s+/g,'')+' '+away;
+    if(!/^\d+\s*[–—-]\s*\d+$/.test(score))continue;
+    const result=home+' '+score.replace(/\s+/g,'')+' '+away;
     for(const club of [home,away]){
       if(!resultsByClub.has(club))resultsByClub.set(club,[]);
       resultsByClub.get(club).push(result);
