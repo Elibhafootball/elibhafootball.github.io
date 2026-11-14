@@ -1,0 +1,29 @@
+name: Repair league table crests
+on:
+  push:
+    paths:
+      - scripts/repair_league_table_crests.py
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Repair crest image paths and club links
+        run: python scripts/repair_league_table_crests.py
+      - name: Commit repaired league pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add competitions/
+          if ! git diff --cached --quiet; then
+            git commit -m "Repair league table crests and club links"
+            git push
+          fi
