@@ -3,11 +3,27 @@ const colors={"Adelaide Wanderers":"#c92c32","AFC Droy":"#33383f","Antonito Boil
 const root=document.querySelector('main');if(!root)return;
 const blocks=[...root.querySelectorAll('.round-block')];const rounds=blocks.map(b=>{const rows=[...b.querySelectorAll('.live-table tbody tr')];return rows.map((row,i)=>{const a=row.querySelector('.live-team a');return a?{name:a.textContent.trim(),href:a.getAttribute('href'),pos:parseInt(row.cells[0]?.textContent,10),played:parseInt(row.cells[1]?.textContent,10),pts:row.querySelector('.live-pts')?.textContent.trim()}:null}).filter(Boolean)}).filter(x=>x.length>0);
 if(rounds.length<2)return;
+// Associate each recorded result with the club's next game number, not the round label.
+const resultsByClub=new Map();
+for(const block of blocks){
+  for(const tr of block.querySelectorAll('table.results tbody tr')){
+    const cells=tr.querySelectorAll('td');
+    if(cells.length<3)continue;
+    const home=cells[0].textContent.trim(),score=cells[1].textContent.trim(),away=cells[2].textContent.trim();
+    if(!/^\\d+\\s*[–—-]\\s*\\d+$/.test(score))continue;
+    const result=home+' '+score.replace(/\\s+/g,'')+' '+away;
+    for(const club of [home,away]){
+      if(!resultsByClub.has(club))resultsByClub.set(club,[]);
+      resultsByClub.get(club).push(result);
+    }
+  }
+}
 const final=rounds[rounds.length-1];const n=final.length;
 const teams=final.map(r=>{const byGame=new Map();for(const round of rounds){const row=round.find(x=>x.name===r.name);if(row&&Number.isInteger(row.played)&&row.played>0&&!byGame.has(row.played))byGame.set(row.played,row)}
 const maxPlayed=Math.max(...final.map(x=>x.played||0));const positions=Array.from({length:maxPlayed},(_,i)=>byGame.get(i+1)?.pos??null);
 const points=Array.from({length:maxPlayed},(_,i)=>byGame.get(i+1)?.pts??'');
-const slug=r.href.split('/').pop().replace('.html','.png');return {name:r.name,href:r.href,crest:'../clubs/crests/'+slug,colors:[colors[r.name]||'#64748b'],positions,points};});
+const results=Array.from({length:maxPlayed},(_,i)=>resultsByClub.get(r.name)?.[i]??null);
+const slug=r.href.split('/').pop().replace('.html','.png');return {name:r.name,href:r.href,crest:'../clubs/crests/'+slug,colors:[colors[r.name]||'#64748b'],positions,points,results};});
 const matchCount=Math.max(...teams.map(t=>t.positions.length));
 const section=document.createElement('section');section.className='position-chart-section';section.innerHTML='<h2>League position by games played</h2><p class="position-chart-help">Positions after each club’s 1st, 2nd, 3rd game, etc. Hover over or select a club to follow its season. Click again to show all clubs.</p><div class="position-chart-scroll"><div class="position-chart-inner"><svg class="position-chart-svg" role="img" aria-label="League positions after each club’s games played"></svg><div class="position-chart-tooltip" hidden></div></div></div>';
 const anchor=root.querySelector('.round-block');if(anchor)anchor.before(section);else root.append(section);
@@ -26,7 +42,19 @@ el('rect',{x:lab-5,y:finalY-15,width:W-lab+5,height:30,fill:'transparent'},label
 const crest=el('image',{x:lab,y:finalY-11,width:22,height:22,href:team.crest},label);
 const name=el('text',{x:lab+30,y:finalY+5,'font-size':14,fill:'currentColor'},label);name.textContent=team.name;
 const select=()=>{selected=selected===team.name?null:team.name;render()};label.addEventListener('click',select);hit.addEventListener('click',select);label.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select()}});[label,hit].forEach(node=>{node.addEventListener('mouseenter',()=>{hovered=team.name;render()});node.addEventListener('mouseleave',()=>{hovered=null;render()})});
-hit.addEventListener('mousemove',e=>{const rect=svg.getBoundingClientRect();const px=(e.clientX-rect.left)*W/rect.width;const idx=Math.max(0,Math.min(matchCount-1,Math.round((px-left)/(right-left)*(matchCount-1))));tip.hidden=false;tip.textContent=team.name+' · Game '+(idx+1)+' · '+team.positions[idx]+ordinal(team.positions[idx])+' · '+team.points[idx]+' pts';tip.style.left=Math.min(65,Math.max(0,(e.clientX-rect.left)/rect.width*100))+'%';tip.style.top='3px'});hit.addEventListener('mouseleave',()=>tip.hidden=true);
+hit.addEventListener('mousemove',e=>{const rect=svg.getBoundingClientRect();const px=(e.clientX-rect.left)*W/rect.width;const idx=Math.max(0,Math.min(matchCount-1,Math.round((px-left)/(right-left)*(matchCount-1))));const position=team.positions[idx];
+if(position==null){tip.hidden=true;return}
+tip.hidden=false;
+tip.textContent=(team.results[idx]||team.name+' · Game '+(idx+1))+' · '+position+ordinal(position);
+const inner=section.querySelector('.position-chart-inner');
+const innerRect=inner.getBoundingClientRect();
+const scaleX=rect.width/W,scaleY=rect.height/H;
+const pointX=rect.left-innerRect.left+X(idx)*scaleX;
+const pointY=rect.top-innerRect.top+Y(position)*scaleY;
+const tooltipWidth=tip.offsetWidth;
+const tooltipHeight=tip.offsetHeight;
+tip.style.left=Math.max(4,Math.min(inner.clientWidth-tooltipWidth-4,pointX-tooltipWidth/2))+'px';
+tip.style.top=Math.max(3,pointY-tooltipHeight-12)+'px'});hit.addEventListener('mouseleave',()=>tip.hidden=true);
 groups.push({team,group,line,secondary,connector,label,name})});
 function ordinal(n){return n%100>=11&&n%100<=13?'th':n%10===1?'st':n%10===2?'nd':n%10===3?'rd':'th'}
 function render(){const active=hovered||selected;for(const g of groups){const on=g.team.name===active;const faded=active&&!on;g.line.style.opacity=faded?'.11':active?'1':'.36';if(g.secondary)g.secondary.style.opacity=faded?'.11':active?'1':'.55';g.line.setAttribute('stroke-width',on?4:2.2);if(g.secondary)g.secondary.setAttribute('stroke-width',on?4:2.2);g.connector.style.opacity=faded?'.2':'1';g.name.style.opacity=faded?'.48':'1';g.name.style.fontWeight=on?'700':'400';g.group.parentNode.append(g.group)}}
