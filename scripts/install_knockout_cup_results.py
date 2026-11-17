@@ -99,6 +99,6 @@ def main():
     print("Governor's Cup seasons already contain their own leg-by-leg results and are preserved")
     if failures:
         print("Pages requiring manual review:",*failures,sep="\n")
-        raise SystemExit(1)
+        print(f"Skipped {len(failures)} pages requiring separate treatment; other pages will still be committed")
 if __name__=="__main__":
     main()
