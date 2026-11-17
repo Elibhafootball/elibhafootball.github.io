@@ -30,6 +30,8 @@ def run(path):
     titles = [(float(x),unescape(n)) for x,n in TITLE.findall(html)]
     cards = CARD.findall(html)
     if not titles or not cards:
+        if '<table class="results">' in html:
+            return "existing", 0
         raise ValueError("Missing expected SVG titles or tie cards")
     groups = OrderedDict((name,[]) for x,name in titles)
     for card in cards:
